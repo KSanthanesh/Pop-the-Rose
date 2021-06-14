@@ -14,12 +14,13 @@ body {
 
 }
 /* style the heading and logo */
-.logo {
+
+.header {
     font-family: 'Lobster', cursive;
     background-color: black;
     margin-left: -13em;
     margin-right: -13em;
-    height: 8rem; 
+    height: 120px; 
 
 }
 .logo img {
@@ -33,11 +34,26 @@ body {
 .logo a {
     text-decoration: none;
 }
-h1 {
+.heading {
    margin-left: 170px;
    color: #ffe4c4;
    font-size: 300%;
     
 }
 /* style the navigation bar */
+nav {
+    float: right;
+    margin-right: 8rem;
+}
+#menu a{
+    color:#ffe4c4;
+    text-decoration: none;
+}
 
+#menu li {
+    float: right;
+    margin-right: 50px;
+    font-size: 180%;
+    font-weight: bold;
+    list-style-type: none;
+} 
