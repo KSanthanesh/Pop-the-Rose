@@ -9,7 +9,7 @@
 body {
      font-family: 'Raleway', sans-serif;
      font-weight: 300;
-     background-color:#ffe4c4;
+     background-color:#fcc685;
      margin: 10px 13em 0 13em;
 
 }
@@ -45,11 +45,6 @@ nav {
     float: right;
     margin-right: 8rem;
 }
-#menu a{
-    color:#ffe4c4;
-    text-decoration: none;
-}
-
 #menu li {
     float: right;
     margin-right: 50px;
@@ -57,3 +52,19 @@ nav {
     font-weight: bold;
     list-style-type: none;
 } 
+#menu a{
+    color:#ffe4c4;
+    text-decoration: none;
+}
+#menu a:hover {
+    background-color: rgb(182, 14, 42);
+}
+.image {
+    margin: 60px 0 30px 9em;
+    width: 60%;
+    height: 400px;
+    
+
+}
+
+
