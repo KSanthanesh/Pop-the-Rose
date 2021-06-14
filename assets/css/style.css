@@ -11,6 +11,7 @@ body {
      font-weight: 300;
      background-color:#fcc685;
      margin: 10px 13em 0 13em;
+     height: 60em;
 
 }
 /* style the heading and logo */
@@ -61,10 +62,28 @@ nav {
 }
 .image {
     margin: 60px 0 30px 9em;
-    width: 60%;
-    height: 400px;
-    
+    line-height: 100px;
+ 
+}
+/* Style the footer here */
+/* Footer */
+footer {
+    height: 80px;
+}
 
+.social-networks {
+    font-size: 24px;
+    text-align: center;
+}
+
+.social-networks>li {
+    display: inline-block;
+}
+
+.social-networks i {
+    font-size: 160%;
+    padding: 80px;
+    color: black;
 }
 
 
