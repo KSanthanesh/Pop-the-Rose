@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind&family=Lobster&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+     font-family: 'Raleway', sans-serif;
+     font-weight: 300;
+     background-color:#ffe4c4;
+     margin: 10px 13em 0 13em;
+
+}
+/* style the heading and logo */
+.logo {
+    font-family: 'Lobster', cursive;
+    background-color: black;
+    margin-left: -13em;
+    margin-right: -13em;
+    height: 8rem; 
+
+}
+.logo img {
+    margin: 10px 10px 10px 60px;
+    float: left;
+    padding: 1px;
+    border-radius: 25%;
+    border: 2px solid #ffe4c4;
+
+}
+.logo a {
+    text-decoration: none;
+}
+h1 {
+   margin-left: 170px;
+   color: #ffe4c4;
+   font-size: 300%;
+    
+}
+/* style the navigation bar */
+
