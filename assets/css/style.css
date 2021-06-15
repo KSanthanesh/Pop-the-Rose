@@ -11,7 +11,7 @@ body {
      font-family: 'Raleway', sans-serif;
      font-weight: 300;
      background-color:#fcc685;
-     margin: 10px 13em 0 13em;
+     margin: 10px 12em 0 12em;
      height: 60em;
 }
 /* style the heading and logo */
@@ -132,14 +132,16 @@ footer {
 }
 
 /* style for Game page */
-
+.play-game h2 {
+    margin-top: 40px;
+}
 .rose-game {
     width: 700px;
     height: 700px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    
+    margin-top: 60px;
     perspective: 1000px;
 
 }
@@ -172,6 +174,17 @@ footer {
   }
   .front-img {
     transform: rotateY(180deg);
+  }
+  /* Restart Button */
+  .restart-btn button {
+    font-size: 150%;
+    font-family: 'Lobster', cursive;
+    border: 2px solid black;
+    border-radius: 60%;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 30rem;
   }
 
 
