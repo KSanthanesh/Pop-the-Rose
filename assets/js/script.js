@@ -3,6 +3,10 @@ const cards = document.querySelectorAll('.rose-card');
 let hasFlippedCard = false;
 let setBoard = false;
 let firstCard, secondCard;
+let CardOpen = 0;
+let totalminCount,totalSecCount =0;
+let totalCardFlip = 0;
+let totalSeconds = 0;
 
 function flipCard() {
   if (setBoard) return;
@@ -59,3 +63,25 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+const closePopup = () => {
+  document.querySelector('.win-msg').style.display = "none";
+}
+
+
+setInterval(setTime, 1000);
+
+function setTime() {
+	++totalSeconds;	  
+	totalMinCount = pad(parseInt(totalSeconds / 60))
+	totalSecCount = pad(totalSeconds % 60);
+}
+
+function pad(val) {
+  var valString = val + "";
+  if (valString.length < 2) {
+	return "0" + valString;
+  } else {
+	return valString;
+  }
+}
