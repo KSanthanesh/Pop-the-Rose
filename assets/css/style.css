@@ -71,15 +71,28 @@ nav {
 .instruction {
     margin: 50px;
 }
-.instruction h2 {
+.instruction > p {
+    font-size: 110%;
+}
+h2 {
     font-family: 'Lobster', cursive;
     text-align: center;
-    font-size: 200%;
+    font-size: 250%;
     margin-bottom: 20px;
+}
+/* style the benefits of memory game */
+
+.benefits > ul {
+    list-style-type: square;
+    list-style-position: inside;
+}
+.benefits li {
+    padding: 10px;
+    font-size: 110%;
 }
 
 /* Style the footer here */
-/* Footer */
+
 footer {
     height: 80px;
 }
