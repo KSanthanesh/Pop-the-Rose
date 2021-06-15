@@ -5,7 +5,7 @@ var time = 2000;
 
 // images details
 images[0] = 'assets/images/yellow-rose.jpg';
-images[1] = 'assets/images/black-rose.jpg';
+images[1] = 'assets/images/black-rose.png';
 images[2] = 'assets/images/pink-rose.jpg';
 images[3] = 'assets/images/purple-rose.jpg';
 images[4] = 'assets/images/red-rose.png';
