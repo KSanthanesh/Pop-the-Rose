@@ -4,56 +4,50 @@ let hasFlippedCard = false;
 let setBoard = false;
 let firstCard, secondCard;
 
-
 function flipCard() {
-    if (setBoard) return;
-    if (this === firstCard) return;
+  if (setBoard) return;
+  if (this === firstCard) return;
 
-    this.classList.add('flip');
+  this.classList.add('flip');
 
-    if (!hasFlippedCard) {
-        hasFlippedCard = true;
+  if (!hasFlippedCard) {
+    hasFlippedCard = true;
+    firstCard = this;
 
-        firstCard = this;
+    return;
+  }
 
-        return
-    } else {
-        secondCard = this;
-        checkForMatch();
-    }
-    
+  secondCard = this;
+  checkForMatch();
 }
 
 function checkForMatch() {
-    
-    let isMatch = firstCard.dataset.base === secondCard.dataset.base;
-    isMatch ? disableCards() : unflipCards();
+  let isMatch = firstCard.dataset.base === secondCard.dataset.base
+  
+  ;
+
+  isMatch ? disableCards() : unflipCards();
 }
 
 function disableCards() {
-    firstCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCard);
+  firstCard.removeEventListener('click', flipCard);
+  secondCard.removeEventListener('click', flipCard);
 
-    Array.from(document.getElementsByClassName('front-img')).forEach(element => {
-        debugger;
-        let cardName = element.getAttribute("alt").split(" ");
-        if(firstCard.dataset.base.indexOf(cardName[0].toLowerCase()) > 0 || secondCard.dataset.base.indexOf(cardName[0].toLowerCase()) >= 0){
-            element.style.background = 'green'
-        }	 
-      });
+  Array.from(document.getElementsByClassName('front-img')).forEach(element => {
+	  debugger;
+	  let cardName = element.getAttribute("alt").split(" ");
+	  if(firstCard.dataset.framework.indexOf(cardName[0].toLowerCase()) > 0 || secondCard.dataset.framework.indexOf(cardName[0].toLowerCase()) >= 0){
+		  element.style.backgroundColor = 'green'
+	  }	 
+	});
+	CardOpen = ++CardOpen;
+   resetBoard();
+   if(CardOpen == 6){
+		document.querySelector('.win-msg').style.display = "block";
+   }
+}
 
-      CardOpen = ++CardOpen;
-     //alert('Matched'+ CardOpen); 
-     resetBoard();
-     if(CardOpen == 6){
-          document.querySelector('.win-msg').style.display = "block";
-          document.querySelector('.totTime span').innerHTML = totalMinCount + ":" +totalSecCount + "sec";
-          document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
-          
-     }
-  }
-  
-  function matchedColor(myArray) {
+function matchedColor(myArray) {
     var passing = true;
     myArray.forEach(function(element) {
         if (element !== myArray[0]) {
@@ -71,6 +65,7 @@ function unflipCards() {
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
+
     resetBoard();
   }, 1500);
   return;
@@ -87,9 +82,9 @@ function resetBoard() {
     card.style.order = randomPos;
   });
 })();
+// Add Congratulation popup msg
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-
 const closePopup = () => {
   document.querySelector('.win-msg').style.display = "none";
 }
