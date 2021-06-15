@@ -40,7 +40,7 @@ function disableCards() {
 	  debugger;
 	  let cardName = element.getAttribute("alt").split(" ");
 	  if(firstCard.dataset.base.indexOf(cardName[0].toLowerCase()) > 0 || secondCard.dataset.base.indexOf(cardName[0].toLowerCase()) >= 0){
-		  element.style.backgroundColor = 'green'
+		  element.style.background = 'green';
 	  }	 
 	});	
   cardOpen = ++cardOpen;
@@ -48,10 +48,20 @@ function disableCards() {
   resetBoard();
   if(cardOpen == 6) {
     document.querySelector('.win-msg').style.display = "block";
-    document.querySelector('.totTime span').innerHtml = totalMinCount + ":" +totalSecCount + "sec";
-    document.querySelector('.totFlipCount span').innerHtml = totalCardFlip;
+    document.querySelector('.totTime span').innerHTML = totalMinCount + ":" +totalSecCount + "sec";
+    document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
   }
 
+}
+function matchedColor(myArray) {
+  var passing = true;
+  myArray.forEach(function(element) {
+      if (element !== myArray[0]) {
+          passing = false;
+      }
+  });
+
+  return passing;
 }
 
 function unflipCards() {
@@ -63,7 +73,7 @@ function unflipCards() {
 
     resetBoard();
   }, 1500);
-  
+  return;
 }
 
 function resetBoard() {
