@@ -135,6 +135,36 @@ footer {
 .play-game h2 {
     margin-top: 40px;
 }
+
+.win-msg {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.win-msg .winMsgSect {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.win-msg .winMsgSect h1 {
+  margin-bottom: 15px;
+} 
+
+.win-msg .winMsgSect > span {
+ 
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  
+}
 .rose-game {
     width: 700px;
     height: 700px;
@@ -187,33 +217,9 @@ footer {
     margin-left: 30rem;
     cursor: pointer;
   }
-  .win-msg {
-      position: absolute;
-      top: 0;
-      z-index: 999;
-      text-align: center;
-      width: 100%;
-      height: 100%;
-      display: none;
-  }
-.win-msg .winMsgSect {
-    width: 500px;
-    margin: 0 auto;
-    margin-top: 80px;
-    padding: 20px;
-    border-radius: 5px;
-    position: relative;
-}
-.win-msg .winMsgSect h1 {
-    margin-bottom: 15px;
-}
+  
 
-.win-msg .winMsgSect > span {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    cursor: pointer;
-}
+  
 
 
 

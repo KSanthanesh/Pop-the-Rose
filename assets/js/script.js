@@ -4,7 +4,7 @@ let hasFlippedCard = false;
 let setBoard = false;
 let firstCard, secondCard;
 let CardOpen = 0;
-let totalminCount,totalSecCount =0;
+let totalMinCount,totalSecCount =0;
 let totalCardFlip = 0;
 let totalSeconds = 0;
 
@@ -26,6 +26,7 @@ function flipCard() {
 }
 
 function checkForMatch() {
+  totalCardFlip = ++totalCardFlip
   let isMatch = firstCard.dataset.base === secondCard.dataset.base;
 
   isMatch ? disableCards() : unflipCards();
@@ -35,7 +36,22 @@ function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
 
+  Array.from(document.getElementsByClassName('front-img')).forEach(element => {
+	  debugger;
+	  let cardName = element.getAttribute("alt").split(" ");
+	  if(firstCard.dataset.base.indexOf(cardName[0].toLowerCase()) > 0 || secondCard.dataset.base.indexOf(cardName[0].toLowerCase()) >= 0){
+		  element.style.backgroundColor = 'green'
+	  }	 
+	});	
+  cardOpen = ++cardOpen;
+  //alert('Matched' + cardOpen)
   resetBoard();
+  if(cardOpen == 6) {
+    document.querySelector('.win-msg').style.display = "block";
+    document.querySelector('.totTime span').innerHtml = totalMinCount + ":" +totalSecCount + "sec";
+    document.querySelector('.totFlipCount span').innerHtml = totalCardFlip;
+  }
+
 }
 
 function unflipCards() {
