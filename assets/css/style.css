@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
      background-color:#fcc685;
      margin: 10px 13em 0 13em;
      height: 60em;
-
 }
 /* style the heading and logo */
 
@@ -130,5 +130,51 @@ footer {
     padding: 80px;
     color: black;
 }
+
+/* style for Game page */
+
+.rose-game {
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    
+    perspective: 1000px;
+
+}
+.rose-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1px 1px 1px black;
+}
+.rose-card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+.rose-card.flip {
+    transform: rotateY(180deg);
+  }
+
+  .front-img, .back-img {
+      height: 100%;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      position: absolute;
+      background: #ce2929;
+      backface-visibility: hidden;
+  }
+  .front-img {
+    transform: rotateY(180deg);
+  }
+
+
+
 
 
