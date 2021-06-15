@@ -59,6 +59,8 @@ nav {
 }
 #menu a:hover {
     background-color: rgb(182, 14, 42);
+    border-radius: 60%;
+    padding: 10px;
 }
 /* style the image and instruction to play */
 .container {
@@ -89,6 +91,23 @@ h2 {
 .benefits li {
     padding: 10px;
     font-size: 110%;
+}
+/* style for Play now button */
+
+.play-now a {
+    text-decoration: none;
+
+}
+.play-now {
+    font-size: 150%;
+    font-family: 'Lobster', cursive;
+    border: 2px solid black;
+    border-radius: 60%;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 30rem;
+    
 }
 
 /* Style the footer here */
