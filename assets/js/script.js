@@ -4,7 +4,7 @@ let hasFlippedCard = false;
 let setBoard = false;
 let firstCard, secondCard;
 let CardOpen = 0;
-let totalMinCount,totalSecCount =0;
+
 let totalCardFlip = 0;
 let totalSeconds = 0;
 
@@ -13,57 +13,34 @@ function flipCard() {
   if (this === firstCard) return;
 
   this.classList.add('flip');
-
+  // first card click
   if (!hasFlippedCard) {
     hasFlippedCard = true;
     firstCard = this;
 
     return;
   }
-
+// second card click
   secondCard = this;
   checkForMatch();
 }
-
+// do check the match card
 function checkForMatch() {
   totalCardFlip = ++totalCardFlip
   let isMatch = firstCard.dataset.base === secondCard.dataset.base;
 
   isMatch ? disableCards() : unflipCards();
 }
-
+//it is a matching card
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-
-  Array.from(document.getElementsByClassName('front-img')).forEach(element => {
-	  debugger;
-	  let cardName = element.getAttribute("alt").split(" ");
-	  if(firstCard.dataset.base.indexOf(cardName[0].toLowerCase()) > 0 || secondCard.dataset.base.indexOf(cardName[0].toLowerCase()) >= 0){
-		  element.style.background = 'green';
-	  }	 
-	});	
-  cardOpen = ++cardOpen;
-  //alert('Matched' + cardOpen)
-  resetBoard();
-  if(cardOpen == 6) {
-    document.querySelector('.win-msg').style.display = "block";
-    document.querySelector('.totTime span').innerHTML = totalMinCount + ":" +totalSecCount + "sec";
-    document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
-  }
+  
+ resetBoard(); 
 
 }
-function matchedColor(myArray) {
-  var passing = true;
-  myArray.forEach(function(element) {
-      if (element !== myArray[0]) {
-          passing = false;
-      }
-  });
 
-  return passing;
-}
-
+//if it is not match and set the time to unflip the card
 function unflipCards() {
   setBoard = true;
 
@@ -88,26 +65,52 @@ function resetBoard() {
   });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard));
 
-const closePopup = () => {
-  document.querySelector('.win-msg').style.display = "none";
+
+var min = 1;
+// calculate the seconds (don't change this! unless time progresses at a different speed for you...)
+var sec = min * 60;
+
+function countdown() {
+  setTimeout('Decrement()',1000);
 }
 
-
-setInterval(setTime, 1000);
-
-function setTime() {
-	++totalSeconds;	  
-	totalMinCount = pad(parseInt(totalSeconds / 60))
-	totalSecCount = pad(totalSeconds % 60);
+function Decrement() {
+    if (document.getElementById) {
+        minutes = document.getElementById("minutes");
+        seconds = document.getElementById("seconds");
+        // if less than a minute remaining
+        if (seconds < 59) {
+            seconds.value = sec;
+        } else {
+            minutes.value = getminutes();
+            seconds.value = getseconds();
+        }
+        sec--;
+        setTimeout('Decrement()',1000);
+    }
 }
 
-function pad(val) {
-  var valString = val + "";
-  if (valString.length < 2) {
-	return "0" + valString;
-  } else {
-	return valString;
+function getminutes() {
+    // minutes is seconds divided by 60, rounded down
+    min = Math.floor(sec / 60);
+    return min;
+}
+
+function getseconds() {
+    // take mins remaining (as seconds) away from total seconds remaining
+    return sec-Math.round(min *60);
+    
+}
+
+countdown();
+function closePopup(){
+if(getminutes(),getseconds() === 0) {
+  const closePopup = () => {
+    document.querySelector('.win-msg').style.display = "none";
   }
+} else {
+  messagePopup(`Time out, Please try again`);
 }
+}
+cards.forEach(card => card.addEventListener('click', flipCard));

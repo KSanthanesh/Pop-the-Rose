@@ -217,8 +217,17 @@ footer {
     margin-left: 30rem;
     cursor: pointer;
   }
-  
-
+#timer {
+    margin-left: 17em;
+}
+#minutes {
+    width: 14px;
+    border: none;
+}
+#seconds {
+    width: 26px;
+    border: none;
+}
   
 
 
