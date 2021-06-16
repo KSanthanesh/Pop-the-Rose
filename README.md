@@ -8,8 +8,18 @@
   - [Business Vision](#business-vision)
   - [Purpose of Website](#purpose-of-website)
 - [Scope](#scope)
-  -[Features](#features)
-  -[Future Feature](#future-feature)
+  - [Features](#features)
+  - [Future Feature](#future-feature)
+- [Structure](#structure "Goto Structure")
+   - [Wireframes](#wireframes)
+   - [Colours](#colours "Goto Colours Section")
+   - [Typography](#typography)
+- [Technologies Used](#technologies-used)
+- [Testing](#testing)
+- [Bugs](#bugs)
+- [Deployment](#deployment)
+- [Acknowledgement](#acknowledgement)
+
 
 
  ## Introduction
