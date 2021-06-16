@@ -64,12 +64,9 @@ function resetBoard() {
     card.style.order = randomPos;
   });
 })();
-
-
-
-var min = 1;
+var sec = 45;
 // calculate the seconds (don't change this! unless time progresses at a different speed for you...)
-var sec = min * 60;
+
 
 function countdown() {
   setTimeout('Decrement()',1000);
@@ -77,40 +74,34 @@ function countdown() {
 
 function Decrement() {
     if (document.getElementById) {
-        minutes = document.getElementById("minutes");
+        
         seconds = document.getElementById("seconds");
         // if less than a minute remaining
-        if (seconds < 59) {
+        if (seconds < 0) {
             seconds.value = sec;
         } else {
-            minutes.value = getminutes();
+            
             seconds.value = getseconds();
         }
         sec--;
         setTimeout('Decrement()',1000);
     }
-}
-
-function getminutes() {
-    // minutes is seconds divided by 60, rounded down
-    min = Math.floor(sec / 60);
-    return min;
+    if (seconds === 0) {
+      seconds.value=stop;
+    }
 }
 
 function getseconds() {
     // take mins remaining (as seconds) away from total seconds remaining
-    return sec-Math.round(min *60);
+    return sec-Math.round(0);
     
 }
-
 countdown();
-function closePopup(){
-if(getminutes(),getseconds() === 0) {
-  const closePopup = () => {
-    document.querySelector('.win-msg').style.display = "none";
-  }
-} else {
-  messagePopup(`Time out, Please try again`);
-}
-}
+
+
+if(CardOpen == 6){
+  document.querySelector('.win-msg').style.display = "block";
+ }
+
+
 cards.forEach(card => card.addEventListener('click', flipCard));
