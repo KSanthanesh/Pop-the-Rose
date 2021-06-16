@@ -217,18 +217,43 @@ footer {
     margin-left: 30rem;
     cursor: pointer;
   }
-#timer {
-    margin-left: 17em;
+  .win-msg{
+	position: absolute;
+    top: 0px;
+    z-index: 900;
+    text-align: center;
+    width: 10%;
+    height: 10%;
+    background: #00000047;
+	display: none;
 }
-#minutes {
-    width: 14px;
-    border: none;
+
+.win-msg .winMsgSect{
+	background-color: #afebf0;
+    width: 500px;
+    margin: 22em 0 0 19em;
+    padding: 20px;
+    border-radius: 5px;
+	font-family: 'Lobster', cursive;
+    position: relative;
 }
-#seconds {
-    width: 26px;
-    border: none;
+.win-msg .winMsgSect h1  {
+	color: hsl(263, 94%, 37%);
+    margin-bottom: 15px;
+    font-size: 220%;
 }
-  
+.win-msg .winMsgSect p {
+    font-size: 180%;
+}
+
+.win-msg .winMsgSect > span{
+	position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 17px;
+    font-weight: 700;
+	cursor:pointer;
+}
 
 
 
