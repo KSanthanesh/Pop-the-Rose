@@ -326,11 +326,27 @@ footer {
 }
 
 }
+/* For  medium screens sizes from 700px wide and down */
 
+@media screen and (max-width: 700px) {
+    .heading {
+        font-size: 250%;    
+     }
+     nav {
+         margin-right: 5rem;
+     }
+     .rose-game {
+         width: 100%;
+         height: 70em;
+     }
+     .rose-card {
+        width: calc(29% - 10px);
+        height: calc(22% - 10px);
+        
+     }
+     .restart-btn button {
+        margin-left: 10em;     
+        
+     }
 
-
-
-
-
-
-
+}
