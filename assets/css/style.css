@@ -38,9 +38,9 @@ body {
 .heading {
    margin-left: 170px;
    color: #ffe4c4;
-   font-size: 300%;
-    
+   font-size: 300%;    
 }
+
 /* style the navigation bar */
 nav {
     float: right;
@@ -253,6 +253,36 @@ footer {
     font-size: 17px;
     font-weight: 700;
 	cursor:pointer;
+}
+
+/* Media queries */
+
+/* For  medium screens sizes from 1200px wide and down */
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin: 30px 11em;
+    }
+
+}
+#menu li {
+    margin-right: 80px;
+}
+.image { 
+    margin: 20px 0;
+
+}
+.instruction {
+    margin: 20px;
+}
+.instruction > p {
+    font-size: 100%;
+}
+.instruction > h2 {
+    font-size: 200%;
+}
+.benefits > h2 {
+    font-size : 200%;
 }
 
 
