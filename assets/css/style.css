@@ -11,7 +11,7 @@ body {
      font-family: 'Raleway', sans-serif;
      font-weight: 300;
      background-color:#fcc685;
-     margin: 10px 12em 0 12em;
+     margin: 30px 100px;
      height: 60em;
 }
 /* style the heading and logo */
@@ -19,13 +19,13 @@ body {
 .header {
     font-family: 'Lobster', cursive;
     background-color: black;
-    margin-left: -13em;
-    margin-right: -13em;
+    margin-left: -7em;
+    margin-right: -7em;
     height: 120px; 
 
 }
 .logo img {
-    margin: 10px 10px 10px 60px;
+    margin: 10px 10px 10px 200px;
     float: left;
     padding: 1px;
     border-radius: 25%;
@@ -35,8 +35,8 @@ body {
 .logo a {
     text-decoration: none;
 }
+
 .heading {
-   margin-left: 170px;
    color: #ffe4c4;
    font-size: 300%;    
 }
@@ -44,7 +44,7 @@ body {
 /* style the navigation bar */
 nav {
     float: right;
-    margin-right: 8rem;
+    margin-right: 15rem;
 }
 #menu li {
     float: right;
@@ -67,14 +67,16 @@ nav {
     display: flex;
 }
 .image {
-    margin: 20px ;
+    margin-top: 30px;
     line-height: 100px;
+    margin-left: -3rem;
+   
 }
 .instruction {
-    margin: 50px;
+    margin: 15px;
 }
 .instruction > p {
-    font-size: 110%;
+    font-size: 120%;
 }
 h2 {
     font-family: 'Lobster', cursive;
@@ -91,6 +93,7 @@ h2 {
 .benefits li {
     padding: 10px;
     font-size: 110%;
+    margin: 20px;
 }
 /* style for Play now button */
 
@@ -106,7 +109,7 @@ h2 {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    margin-left: 30rem;
+    margin-left: 22em;
     
 }
 
@@ -214,7 +217,7 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    margin-left: 30rem;
+    margin-left: 31rem;
     cursor: pointer;
   }
   .win-msg{
@@ -256,34 +259,75 @@ footer {
 }
 
 /* Media queries */
+/* For  medium screens sizes from 1150px wide and down */
 
-/* For  medium screens sizes from 1200px wide and down */
-
-@media screen and (max-width: 1200px) {
-    body {
-        margin: 30px 11em;
+@media screen and (max-width: 1150px) {
+    .instruction p {
+        font-size: 110%;
+    }
+    .image { 
+        margin: 30px 10px 30px -5rem;
+        width: 300px;
+        height: 300px;
     }
 
+    .play-now {
+        margin-left: 12em;
+    }
+    
+
 }
+
+/* For  medium screens sizes from 950px wide and down */
+
+@media screen and (max-width: 950px) {
+    body {
+        margin: 30px 10px;
+    }
+.header {
+    margin-left: -8em;
+}
+.logo img {
+    width: 100px;
+    height: 100px;
+    
+}
+.h1 {
+    font-size: 180%;
+}
+
 #menu li {
-    margin-right: 80px;
+    margin-right: 120px;
 }
 .image { 
-    margin: 20px 0;
+    margin: 20px;
+    width: 230px;
+    height: 230px;
 
 }
 .instruction {
     margin: 20px;
 }
-.instruction > p {
+.instruction p {
     font-size: 100%;
 }
+
 .instruction > h2 {
     font-size: 200%;
 }
 .benefits > h2 {
     font-size : 200%;
 }
+.play-now {
+    margin-left: 12em;
+}
+.restart-btn button {
+   margin-left: 12em;     
+}
+
+}
+
+
 
 
 
