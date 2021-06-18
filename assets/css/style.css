@@ -202,7 +202,7 @@ footer {
       padding: 10px;
       border-radius: 5px;
       position: absolute;
-      background: #ce2929;
+      background: grey;
       backface-visibility: hidden;
   }
   .front-img {
@@ -333,17 +333,23 @@ footer {
         font-size: 250%;    
      }
      nav {
-         margin-right: 5rem;
+         margin-right: 4rem;
      }
+     #menu li {
+        margin-right: 120px;
+        font-size: 130%;
+        
+    }
      .rose-game {
          width: 100%;
-         height: 70em;
+         height: 30em;
      }
      .rose-card {
         width: calc(29% - 10px);
-        height: calc(22% - 10px);
+        height: calc(20% - 10px);
         
      }
+    
      .restart-btn button {
         margin-left: 10em;     
         
