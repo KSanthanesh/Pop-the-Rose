@@ -321,6 +321,12 @@ footer {
 .play-now {
     margin-left: 12em;
 }
+.win-msg .winMsgSect {
+    width: 400px;
+    margin: 22em 0em 0 11em;
+    padding: 20px;
+
+ }
 .restart-btn button {
    margin-left: 12em;     
 }
@@ -349,20 +355,98 @@ footer {
         height: calc(20% - 10px);
         
      }
+     .front-img, .back-img {
+        padding: 5px
+
+    } 
     
      .restart-btn button {
         margin-left: 8em;     
         
      }
+     .win-msg .winMsgSect {
+        width: 380px;
+        margin: 22em 0em 0 6em;
+        padding: 20px;
+
+     }
      .win-msg .winMsgSect h1 {
-         font-size: 180%;
+         font-size: 170%;
      }
      .win-msg .winMsgSect p {
-         font-size: 150%;
+         font-size: 140%;
      }
      .win-msg {
          width: 8%;
          height: 8%;
      }
+     .social-networks i {
+        font-size: 150%;
+        padding: 20px;
 
 }
+}
+/* For  medium screens sizes from 500px wide and down */
+
+@media screen and (max-width: 500px) {
+    .logo img {
+        margin: 10px 10px 10px 130px;
+    }
+    #menu li {
+        margin-right: 85px;
+        font-size: 120%;
+        
+    }
+   
+    .container {
+        display: block;
+    } 
+    .image { 
+        margin: 20px;
+        width: 320px;
+        height: 250px;
+    
+    }
+    
+    .instruction > h2 {
+        font-size: 180%;
+    }
+    .benefits > h2 {
+        font-size : 180%;
+    }
+    .benefits li {
+        font-size: 100%;
+    }
+     
+    .play-now {
+        margin-left: 6em;
+    }
+
+    .win-msg .winMsgSect {
+        width: 300px;
+        margin: 22em 0em 0 1em;
+        padding: 15px;
+
+     }
+     .win-msg .winMsgSect h1 {
+         font-size: 150%;
+     }
+     .win-msg .winMsgSect p {
+         font-size: 120%;
+     }
+     .front-img, .back-img {
+         padding: 5px
+
+     } 
+     .restart-btn button {
+        margin-left: 6.5em;
+        font-size: 120%;
+        padding: 10px;     
+     }
+     .social-networks i {
+        font-size: 140%;
+        padding: 30px;
+    
+     }  
+
+    }

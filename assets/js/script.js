@@ -28,10 +28,10 @@ function flipCard() {
   checkForMatch();
 }
 
-// check the match
+// check the match and count the total flip card
 
 function checkForMatch() {	
-  totalCardFlip = +totalCardFlip
+  totalCardFlip = ++totalCardFlip
   let cardMatch = firstCard.dataset.name === secondCard.dataset.name;
   cardMatch ? disableCards() : unflipCards();
 }
