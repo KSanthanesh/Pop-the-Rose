@@ -42,14 +42,19 @@ function disableCards() {
   secondCard.removeEventListener('click', flipCard);
   
   Array.from(document.getElementsByClassName('front-img')).forEach(element => {
-	  
-	  let cardName = element.getAttribute("alt").split(" ");
-	  if(firstCard.dataset.name.indexOf(cardName[0].toLowerCase()) > 0 || secondCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0){
-		  element.style.background = 'green'
-	  }	 
+
+	  let cardName = element.getAttribute("alt").split("");
+	  if(firstCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0 || secondCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0);
+   
+		  
+	   
 	});	
-	CardOpen = ++CardOpen;
+  // once finish the game congrats msg, time and total flip card will shown
+  CardOpen = ++CardOpen;
+  
    //alert('Matched'+ CardOpen); 
+
+   
    resetBoard();
    if(CardOpen == 6){
 		document.querySelector('.win-msg').style.display = "block";
@@ -57,6 +62,7 @@ function disableCards() {
 		document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
 		
    }
+ 
 }
 
 function matchedColor(myArray) {
@@ -70,7 +76,7 @@ function matchedColor(myArray) {
     return passing;
 }
 
-// if not matched the cards
+// if not matched, both the cards will close in 1 sec.
 function unflipCards() {
   lockBoard = true;
 
@@ -86,7 +92,7 @@ function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
-
+// Everytime the game shuffle the card
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
@@ -95,6 +101,7 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+// for close pop up for the winning msg
 
 const closePopup = () => {
   document.querySelector('.win-msg').style.display = "none";

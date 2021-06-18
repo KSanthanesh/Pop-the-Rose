@@ -109,9 +109,9 @@ h2 {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    margin-left: 22em;
-    
+    margin-left: 48%;
 }
+
 
 /* Style the footer here */
 
@@ -139,35 +139,7 @@ footer {
     margin-top: 40px;
 }
 
-.win-msg {
-    position: absolute;
-    top: 0;
-    z-index: 999;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
 
-.win-msg .winMsgSect {
-  width: 500px;
-  margin: 0 auto;
-  margin-top: 80px;
-  padding: 20px;
-  border-radius: 5px;
-  position: relative;
-}
-.win-msg .winMsgSect h1 {
-  margin-bottom: 15px;
-} 
-
-.win-msg .winMsgSect > span {
- 
-  right: 10px;
-  top: 5px;
-  cursor: pointer;
-  
-}
 .rose-game {
     width: 700px;
     height: 700px;
@@ -217,7 +189,7 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    margin-left: 31rem;
+    margin-left: 47%;
     cursor: pointer;
   }
   .win-msg{
@@ -271,9 +243,6 @@ footer {
         height: 300px;
     }
 
-    .play-now {
-        margin-left: 12em;
-    }
     
 
 }
@@ -321,18 +290,14 @@ nav {
 .benefits > h2 {
     font-size : 200%;
 }
-.play-now {
-    margin-left: 12em;
-}
+
 .win-msg .winMsgSect {
     width: 400px;
     margin: 22em 0em 0 11em;
     padding: 20px;
 
  }
-.restart-btn button {
-   margin-left: 12em;     
-}
+
 
 }
 /* For  medium screens sizes from 700px wide and down */
@@ -363,10 +328,7 @@ nav {
 
     } 
     
-     .restart-btn button {
-        margin-left: 8em;     
-        
-     }
+     
      .win-msg .winMsgSect {
         width: 380px;
         margin: 22em 0em 0 6em;
@@ -392,6 +354,9 @@ nav {
 /* For  medium screens sizes from 500px wide and down */
 
 @media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+    }
     
     .logo img {
         margin: 10px 10px 10px 120px;
@@ -413,10 +378,9 @@ nav {
         display: block;
     } 
     .image { 
-        margin: 10px;
-        width: 280px;
+        margin: 5px;
+        width: 250px;
         height: 250px;
-    
     }
     
     .instruction > h2 {
@@ -428,10 +392,9 @@ nav {
     .benefits li {
         font-size: 100%;
     }
-     
-    .play-now {
-        margin-left: 5em;
-    }
+     .play-now {
+         margin-left: 30%;
+     }    
 
     .win-msg .winMsgSect {
         width: 300px;
@@ -450,13 +413,13 @@ nav {
 
      } 
      .restart-btn button {
-        margin-left: 6.5em;
+       
         font-size: 120%;
         padding: 10px;     
      }
      .social-networks i {
-        font-size: 140%;
-        padding: 30px;
+        font-size: 120%;
+        padding: 20px;
     
      }  
 
