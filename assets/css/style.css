@@ -19,8 +19,8 @@ body {
 .header {
     font-family: 'Lobster', cursive;
     background-color: black;
-    margin-left: -7em;
-    margin-right: -7em;
+    margin-left: -100px;
+    margin-right: -100px;
     height: 120px; 
 
 }
@@ -44,11 +44,11 @@ body {
 /* style the navigation bar */
 nav {
     float: right;
-    margin-right: 15rem;
+    margin-right: 20rem;
 }
 #menu li {
     float: right;
-    margin-right: 50px;
+    margin-right: 60px;
     font-size: 180%;
     font-weight: bold;
     list-style-type: none;
@@ -295,9 +295,12 @@ footer {
 .h1 {
     font-size: 180%;
 }
+nav {
+   margin-right: 5rem;
+}
 
 #menu li {
-    margin-right: 120px;
+    margin-right: 100px;
 }
 .image { 
     margin: 20px;
@@ -339,10 +342,10 @@ footer {
         font-size: 250%;    
      }
      nav {
-         margin-right: 4rem;
-     }
+        margin-right: 4rem;
+    }
      #menu li {
-        margin-right: 120px;
+        margin-right: 100px;
         font-size: 130%;
         
     }
@@ -389,12 +392,20 @@ footer {
 /* For  medium screens sizes from 500px wide and down */
 
 @media screen and (max-width: 500px) {
+    
     .logo img {
-        margin: 10px 10px 10px 130px;
+        margin: 10px 10px 10px 120px;
+        width:90px;
+        height: 90px;
+        
+    }
+    .heading {
+        font-size: 250%;
     }
     #menu li {
-        margin-right: 85px;
-        font-size: 120%;
+        
+        font-size: 100%;
+        margin-right: 80px;
         
     }
    
