@@ -413,8 +413,8 @@ nav {
         display: block;
     } 
     .image { 
-        margin: 20px;
-        width: 320px;
+        margin: 10px;
+        width: 280px;
         height: 250px;
     
     }
@@ -430,7 +430,7 @@ nav {
     }
      
     .play-now {
-        margin-left: 6em;
+        margin-left: 5em;
     }
 
     .win-msg .winMsgSect {
