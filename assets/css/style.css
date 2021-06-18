@@ -351,8 +351,18 @@ footer {
      }
     
      .restart-btn button {
-        margin-left: 10em;     
+        margin-left: 8em;     
         
+     }
+     .win-msg .winMsgSect h1 {
+         font-size: 180%;
+     }
+     .win-msg .winMsgSect p {
+         font-size: 150%;
+     }
+     .win-msg {
+         width: 8%;
+         height: 8%;
      }
 
 }

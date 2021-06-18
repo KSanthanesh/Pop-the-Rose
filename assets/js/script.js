@@ -31,24 +31,24 @@ function flipCard() {
 // check the match
 
 function checkForMatch() {	
-  totalCardFlip = ++totalCardFlip
-  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-  isMatch ? disableCards() : unflipCards();
+  totalCardFlip = +totalCardFlip
+  let cardMatch = firstCard.dataset.name === secondCard.dataset.name;
+  cardMatch ? disableCards() : unflipCards();
 }
 // matched cards
 function disableCards() {
 	
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-  /*
+  
   Array.from(document.getElementsByClassName('front-img')).forEach(element => {
-	  debugger;
+	  
 	  let cardName = element.getAttribute("alt").split(" ");
-	  if(firstCard.dataset.framework.indexOf(cardName[0].toLowerCase()) > 0 || secondCard.dataset.framework.indexOf(cardName[0].toLowerCase()) >= 0){
-		  element.style.background = 'green';
+	  if(firstCard.dataset.name.indexOf(cardName[0].toLowerCase()) > 0 || secondCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0){
+		  element.style.background = 'green'
 	  }	 
 	});	
-	CardOpen = ++CardOpen; */
+	CardOpen = ++CardOpen;
    //alert('Matched'+ CardOpen); 
    resetBoard();
    if(CardOpen == 6){
@@ -78,7 +78,7 @@ function unflipCards() {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
     resetBoard();
-  }, 1500);
+  }, 1000);
   return;
 }
 // reset the card
