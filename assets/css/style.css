@@ -249,8 +249,8 @@ footer {
         margin-left: 12em;   
 
     }
-    .restart-btn {
-        margin-left: 42%;
+    .restart-btn button{
+        margin-left: 15em;
     }
 }
 
@@ -308,7 +308,7 @@ nav {
 
  }
  .restart-btn button {
-     margin-left: 40%;
+     margin-left: 12em;
 
  }
 
@@ -361,11 +361,12 @@ nav {
      }
      .social-networks i {
         font-size: 150%;
-        padding: 20px;
+        padding: 30px;
 
 }
-.restart-btn button {
-    margin-left: 30%;
+
+    .restart-btn button {
+        margin-left: 10em;
 
 }
 }
@@ -415,9 +416,9 @@ nav {
      }    
 
     .win-msg .winMsgSect {
-        width: 300px;
+        width: 280px;
         margin: 22em 0em 0 0.8em;
-        padding: 15px;
+        padding: 10px;
 
      }
      .win-msg .winMsgSect h1 {
@@ -431,14 +432,16 @@ nav {
 
      } 
      .restart-btn button {
-        margin-left: 25%;
+        margin-left: 6em;
         font-size: 120%;
         padding: 10px;     
      }
      .social-networks i {
         font-size: 120%;
-        padding: 20px;
+        padding: 25px;
     
      }  
 
     }
+
+   

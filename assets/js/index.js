@@ -11,6 +11,7 @@ images[3] = 'assets/images/purple-rose.jpg';
 images[4] = 'assets/images/red-rose.png';
 images[5] = 'assets/images/white-rose.jpg';
 
+
 // changing sliding images
 function changeImg() {
     document.slide.src = images[i];

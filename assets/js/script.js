@@ -80,7 +80,7 @@ function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstRoseCard, secondRoseCard] = [null, null];
 }
-// Everytime the game shuffle the card
+// Everytime the game shuffle the card randomly
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
