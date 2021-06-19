@@ -189,7 +189,7 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    margin-left: 47%;
+    margin-left: 46%;
     cursor: pointer;
   }
   .win-msg{
@@ -206,7 +206,7 @@ footer {
 .win-msg .winMsgSect{
 	background-color: #afebf0;
     width: 500px;
-    margin: 22em 0 0 19em;
+    margin: 22em 0 0 25em;
     padding: 20px;
     border-radius: 5px;
 	font-family: 'Lobster', cursive;
@@ -242,9 +242,16 @@ footer {
         width: 300px;
         height: 300px;
     }
+    .play-now { 
+        margin-left: 42%;
+    }
+    .win-msg .winMsgSect{
+        margin-left: 12em;   
 
-    
-
+    }
+    .restart-btn {
+        margin-left: 42%;
+    }
 }
 
 /* For  medium screens sizes from 950px wide and down */
@@ -290,11 +297,18 @@ nav {
 .benefits > h2 {
     font-size : 200%;
 }
+.play-now {
+    margin-left: 40%;
+}
 
 .win-msg .winMsgSect {
     width: 400px;
     margin: 22em 0em 0 11em;
     padding: 20px;
+
+ }
+ .restart-btn button {
+     margin-left: 40%;
 
  }
 
@@ -398,7 +412,7 @@ nav {
 
     .win-msg .winMsgSect {
         width: 300px;
-        margin: 22em 0em 0 1em;
+        margin: 22em 0em 0 0.8em;
         padding: 15px;
 
      }
