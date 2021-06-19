@@ -1,7 +1,6 @@
-
-var i = 0;
+var x = 0;
 var images = [];
-var time = 2000;
+var time = 1500;
 
 // Array images details
 images[0] = 'assets/images/yellow-rose.jpg';
@@ -12,16 +11,18 @@ images[4] = 'assets/images/red-rose.png';
 images[5] = 'assets/images/white-rose.jpg';
 
 
-// changing sliding images
-function changeImg() {
-    document.slide.src = images[i];
-    if(i < images.length - 1) {
-        i++;
+// changing images automatically
+
+function roseImg() {
+    document.slide.src = images[x];
+    if (x < images.length - 1) {
+        x++;
     } else {
-        i = 0;
-    }
-
-     setTimeout("changeImg()", time);
+        x = 0;
+  }  
 }
+window.onload = roseImg;
 
-window.onload = changeImg;
+
+
+

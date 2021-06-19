@@ -104,12 +104,13 @@ h2 {
 .play-now {
     font-size: 150%;
     font-family: 'Lobster', cursive;
+    width: 10%;
     border: 2px solid black;
     border-radius: 60%;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     margin-top: 20px;
-    margin-left: 48%;
+    margin-left: 46%;
 }
 
 
@@ -212,7 +213,7 @@ footer {
 	font-family: 'Lobster', cursive;
     position: relative;
 }
-.win-msg .winMsgSect h1  {
+.win-msg .winMsgSect h2  {
 	color: hsl(263, 94%, 37%);
     margin-bottom: 15px;
     font-size: 220%;
@@ -349,7 +350,7 @@ nav {
         padding: 20px;
 
      }
-     .win-msg .winMsgSect h1 {
+     .win-msg .winMsgSect h2 {
          font-size: 170%;
      }
      .win-msg .winMsgSect p {
@@ -421,7 +422,7 @@ nav {
         padding: 10px;
 
      }
-     .win-msg .winMsgSect h1 {
+     .win-msg .winMsgSect h2 {
          font-size: 150%;
      }
      .win-msg .winMsgSect p {
@@ -432,7 +433,7 @@ nav {
 
      } 
      .restart-btn button {
-        margin-left: 6em;
+        margin-left: 5.5em;
         font-size: 120%;
         padding: 10px;     
      }
