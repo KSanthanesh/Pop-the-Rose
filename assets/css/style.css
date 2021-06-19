@@ -189,7 +189,7 @@ footer {
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    margin-left: 46%;
+    margin-left: 25em;
     cursor: pointer;
   }
   .win-msg{
@@ -364,6 +364,10 @@ nav {
         padding: 20px;
 
 }
+.restart-btn button {
+    margin-left: 30%;
+
+}
 }
 /* For  medium screens sizes from 500px wide and down */
 
@@ -427,7 +431,7 @@ nav {
 
      } 
      .restart-btn button {
-        margin-left: 30%;
+        margin-left: 25%;
         font-size: 120%;
         padding: 10px;     
      }
