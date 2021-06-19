@@ -4,7 +4,7 @@ const cards = document.querySelectorAll('.rose-card');
 
 let hasFlippedCard = false;
 let lockBoard = false;
-let firstCard, secondCard;
+let firstRoseCard, secondRoseCard;
 let CardOpen = 0;
 let totalMinCount,totalSecCount = 0;
 let totalCardFlip = 0;
@@ -14,17 +14,17 @@ let totalSeconds = 0;
 function flipCard() {	
   
   if (lockBoard) return;
-  if (this === firstCard)
+  if (this === firstRoseCard)
   return;
 
   this.classList.add('flip');
-// first  card click
+// first Rose card click
   if (!hasFlippedCard) {
     hasFlippedCard = true;
-    firstCard = this;
+    firstRoseCard = this;
     return;
   }
-  secondCard = this;
+  secondRoseCard = this;
   checkForMatch();
 }
 
@@ -32,23 +32,22 @@ function flipCard() {
 
 function checkForMatch() {	
   totalCardFlip = ++totalCardFlip
-  let cardMatch = firstCard.dataset.name === secondCard.dataset.name;
-  cardMatch ? disableCards() : unflipCards();
+  let cardMatch = firstRoseCard.dataset.name === secondRoseCard.dataset.name;
+  cardMatch ? disableRoseCards() : unflipRoseCards();
 }
 // matched cards
-function disableCards() {
+function disableRoseCards() {
 	
-  firstCard.removeEventListener('click', flipCard);
-  secondCard.removeEventListener('click', flipCard);
+  firstRoseCard.removeEventListener('click', flipCard);
+  secondRoseCard.removeEventListener('click', flipCard);
   
   Array.from(document.getElementsByClassName('front-img')).forEach(element => {
 
-	  let cardName = element.getAttribute("alt").split("");
-	  if(firstCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0 || secondCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0);
-   
-		  
-	   
+	  let cardName = element.getAttribute("alt").split(" ");
+	  if(firstRoseCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0 || secondRoseCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0);
+    
 	});	
+  
   // once finish the game congrats msg, time and total flip card will shown
   CardOpen = ++CardOpen;
   
@@ -65,24 +64,13 @@ function disableCards() {
  
 }
 
-function matchedColor(myArray) {
-    var passing = true;
-    myArray.forEach(function(element) {
-        if (element !== myArray[0]) {
-            passing = false;
-        }
-    });
-
-    return passing;
-}
-
 // if not matched, both the cards will close in 1 sec.
-function unflipCards() {
+function unflipRoseCards() {
   lockBoard = true;
 
   setTimeout(() => {
-    firstCard.classList.remove('flip');
-    secondCard.classList.remove('flip');
+    firstRoseCard.classList.remove('flip');
+    secondRoseCard.classList.remove('flip');
     resetBoard();
   }, 1000);
   return;
@@ -90,7 +78,7 @@ function unflipCards() {
 // reset the card
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
-  [firstCard, secondCard] = [null, null];
+  [firstRoseCard, secondRoseCard] = [null, null];
 }
 // Everytime the game shuffle the card
 (function shuffle() {
@@ -107,7 +95,7 @@ const closePopup = () => {
   document.querySelector('.win-msg').style.display = "none";
 }
 
-
+// set the timer for game
 setInterval(setTime, 1000);
 
 function setTime() {
@@ -115,7 +103,7 @@ function setTime() {
 	totalMinCount = pad(parseInt(totalSeconds / 60))
 	totalSecCount = pad(totalSeconds % 60);
 }
-
+// set the total flipcard
 function pad(val) {
   var valString = val + "";
   if (valString.length < 2) {

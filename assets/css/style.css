@@ -379,15 +379,15 @@ nav {
     } 
     .image { 
         margin: 5px;
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
     }
     
     .instruction > h2 {
         font-size: 180%;
     }
     .benefits > h2 {
-        font-size : 180%;
+        font-size : 175%;
     }
     .benefits li {
         font-size: 100%;
@@ -413,7 +413,7 @@ nav {
 
      } 
      .restart-btn button {
-       
+        margin-left: 30%;
         font-size: 120%;
         padding: 10px;     
      }
