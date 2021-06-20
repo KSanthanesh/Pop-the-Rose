@@ -25,7 +25,9 @@
  ## Introduction
    This project is designed to test the brain memory. This game is useful for kids and adults to test their memory power.<br>
    I have used colourful Rose Pictures to create the pleasant feeling while playing this memory game.<br>
-   
+   The Webpage is categorised into two main sections, such as Home and Game.<br>
+   Congratulation Message will pop up end of each game with stating time taken vs total number of flipped cards lifted. This function encourage the players to grade their memory power each time they play this memory game.
+
    ### Home
    The Home page covers the following section:
    - Header and Navigation Menu
@@ -44,15 +46,22 @@
   - Footer
 
 ## Strategy
-The website covers all the screen types, such as Pc, Laptop, Tablet and Mobile. The website is easily navigate to all the sections.
+  The website covers all the screen types, such as Pc, Laptop, Tablet and Mobile. The website is easily navigate to all the sections.
 
   ### UX
-
+  - As a user i would like to know how to play this game.
+  - As a user i would like to know the benefits of playing this game.
+  - As a user i would expect pictures used in the game to be suitable for all age groups.
+  - As a user i would expect encourage messages.
+  - As a user i would like to know how long did i take to complete the game.
+  - As a user i would like to know how many flip cards are lifted for each game.
 
   ### Business Vision
+  This game is designed for all age group.The Rose picture is choosen to create the pleasant feeling while playing the game.The time function is included in this game to attract people to play this game repeatedly to improve their brain memory.
 
 
   ### Purpose of Website
+  
 
 ## Scope
   ### Features
