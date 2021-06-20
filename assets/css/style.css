@@ -8,12 +8,13 @@
 }
 
 body {
-     font-family: 'Raleway', sans-serif;
-     font-weight: 300;
-     background-color:#fcc685;
-     margin: 30px 100px;
-     height: 60em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    background-color: #fcc685;
+    margin: 0 100px 30px 100px;
+    height: 60em;
 }
+
 /* style the heading and logo */
 
 .header {
@@ -21,24 +22,24 @@ body {
     background-color: black;
     margin-left: -100px;
     margin-right: -100px;
-    height: 120px; 
-
+    height: 120px;
 }
+
 .logo img {
     margin: 10px 10px 10px 200px;
     float: left;
     padding: 1px;
     border-radius: 25%;
     border: 2px solid #ffe4c4;
-
 }
+
 .logo a {
     text-decoration: none;
 }
 
 .heading {
-   color: #ffe4c4;
-   font-size: 300%;    
+    color: #ffe4c4;
+    font-size: 300%;
 }
 
 /* style the navigation bar */
@@ -46,73 +47,87 @@ nav {
     float: right;
     margin-right: 20rem;
 }
+
 #menu li {
     float: right;
     margin-right: 60px;
     font-size: 180%;
     font-weight: bold;
     list-style-type: none;
-} 
-#menu a{
-    color:#ffe4c4;
+}
+
+#menu a {
+    color: #ffe4c4;
     text-decoration: none;
 }
+
 #menu a:hover {
     background-color: rgb(182, 14, 42);
     border-radius: 60%;
     padding: 10px;
 }
+
 /* style the image and instruction to play */
 .container {
     display: flex;
+    flex: wrap;
 }
+
 .image {
     margin-top: 30px;
+    margin-left: -120px;
     line-height: 100px;
-    margin-left: -3rem;
-   
 }
+
 .instruction {
     margin: 15px;
 }
-.instruction > p {
+
+.instruction>p {
     font-size: 120%;
 }
+
 h2 {
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size: 250%;
     margin-bottom: 20px;
 }
+
 /* style the benefits of memory game */
 
-.benefits > ul {
+.benefits>ul {
     list-style-type: square;
     list-style-position: inside;
 }
+
 .benefits li {
     padding: 10px;
     font-size: 110%;
     margin: 20px;
 }
+
 /* style for Play now button */
 
 .play-now a {
     text-decoration: none;
-
 }
+
 .play-now {
     font-size: 150%;
     font-family: 'Lobster', cursive;
-    width: 10%;
+    margin-top: 10px;
+    padding: 10px;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 120px;
     border: 2px solid black;
     border-radius: 60%;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 46%;
 }
-
 
 /* Style the footer here */
 
@@ -131,6 +146,7 @@ footer {
 
 .social-networks i {
     font-size: 160%;
+    margin-top: 10px;
     padding: 80px;
     color: black;
 }
@@ -140,17 +156,16 @@ footer {
     margin-top: 40px;
 }
 
-
 .rose-game {
     width: 700px;
     height: 700px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    margin-top: 60px;
+    margin-bottom: 20px;
     perspective: 1000px;
-
 }
+
 .rose-card {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
@@ -161,74 +176,83 @@ footer {
     transition: transform .5s;
     box-shadow: 1px 1px 1px black;
 }
+
 .rose-card:active {
     transform: scale(0.97);
     transition: transform .2s;
 }
+
 .rose-card.flip {
     transform: rotateY(180deg);
-  }
+}
 
-  .front-img, .back-img {
-      height: 100%;
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      position: absolute;
-      background: grey;
-      backface-visibility: hidden;
-  }
-  .front-img {
+.front-img,
+.back-img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    background: grey;
+    backface-visibility: hidden;
+}
+
+.front-img {
     transform: rotateY(180deg);
-  }
-  /* Restart Button */
-  .restart-btn button {
+}
+
+/* Restart Button */
+.restart-btn button {
     font-size: 150%;
     font-family: 'Lobster', cursive;
     border: 2px solid black;
     border-radius: 60%;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     margin-top: 20px;
-    margin-left: 25em;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     cursor: pointer;
-  }
-  .win-msg{
-	position: absolute;
-    top: 0px;
-    z-index: 900;
-    text-align: center;
-    width: 10%;
-    height: 10%;
-    background: #00000047;
-	display: none;
 }
 
-.win-msg .winMsgSect{
-	background-color: #afebf0;
+.win-msg {
+    position: absolute;
+    top: 300px;
+    left: 33%;
+    z-index: 999;
+    text-align: center;
+}
+
+.win-msg .winMsgSect {
+    background-color: #afebf0;
     width: 500px;
-    margin: 22em 0 0 25em;
+    margin: auto;
     padding: 20px;
     border-radius: 5px;
-	font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive;
     position: relative;
 }
-.win-msg .winMsgSect h2  {
-	color: hsl(263, 94%, 37%);
+
+.win-msg .winMsgSect h2 {
+    color: hsl(263, 94%, 37%);
     margin-bottom: 15px;
     font-size: 220%;
 }
+
 .win-msg .winMsgSect p {
     font-size: 180%;
 }
 
-.win-msg .winMsgSect > span{
-	position: absolute;
+.win-msg .winMsgSect>span {
+    position: absolute;
     right: 10px;
     top: 5px;
     font-size: 17px;
     font-weight: 700;
-	cursor:pointer;
+    cursor: pointer;
 }
 
 /* Media queries */
@@ -238,20 +262,13 @@ footer {
     .instruction p {
         font-size: 110%;
     }
-    .image { 
-        margin: 30px 10px 30px -5rem;
-        width: 300px;
-        height: 300px;
-    }
-    .play-now { 
-        margin-left: 42%;
-    }
-    .win-msg .winMsgSect{
-        margin-left: 12em;   
 
+    .image {
+        margin-left: -200px;
     }
-    .restart-btn button{
-        margin-left: 15em;
+
+    .win-msg {
+        left: 27%;
     }
 }
 
@@ -259,190 +276,189 @@ footer {
 
 @media screen and (max-width: 950px) {
     body {
-        margin: 30px 10px;
+        margin: 30px 10px 10px 10px;
+        height: 80px;
     }
-.header {
-    margin-left: -8em;
-}
-.logo img {
-    width: 100px;
-    height: 100px;
-    
-}
-.h1 {
-    font-size: 180%;
-}
-nav {
-   margin-right: 5rem;
+
+    .header {
+        margin-left: -8em;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .h1 {
+        font-size: 180%;
+    }
+
+    nav {
+        margin-right: 5rem;
+    }
+
+    #menu li {
+        margin-right: 100px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .image {
+        margin-left: 170px;
+    }
+
+    .instruction p {
+        font-size: 100%;
+    }
+
+    .instruction>h2 {
+        font-size: 200%;
+    }
+
+    .benefits>h2 {
+        font-size: 200%;
+    }
+
+    .win-msg {
+        left: 20%;
+    }
 }
 
-#menu li {
-    margin-right: 100px;
-}
-.image { 
-    margin: 20px;
-    width: 230px;
-    height: 230px;
-
-}
-.instruction {
-    margin: 20px;
-}
-.instruction p {
-    font-size: 100%;
-}
-
-.instruction > h2 {
-    font-size: 200%;
-}
-.benefits > h2 {
-    font-size : 200%;
-}
-.play-now {
-    margin-left: 40%;
-}
-
-.win-msg .winMsgSect {
-    width: 400px;
-    margin: 22em 0em 0 11em;
-    padding: 20px;
-
- }
- .restart-btn button {
-     margin-left: 12em;
-
- }
-
-
-}
 /* For  medium screens sizes from 700px wide and down */
 
 @media screen and (max-width: 700px) {
     .heading {
-        font-size: 250%;    
-     }
-     nav {
+        font-size: 250%;
+    }
+
+    nav {
         margin-right: 4rem;
     }
-     #menu li {
+
+    #menu li {
         margin-right: 100px;
         font-size: 130%;
-        
     }
-     .rose-game {
-         width: 100%;
-         height: 30em;
-     }
-     .rose-card {
+
+    .image {
+        margin-left: 110px;
+    }
+
+    .rose-game {
+        width: 100%;
+        height: 30em;
+        margin-left: 10px;
+    }
+
+    .rose-card {
         width: calc(29% - 10px);
         height: calc(20% - 10px);
-        
-     }
-     .front-img, .back-img {
+    }
+
+    .front-img,
+    .back-img {
         padding: 5px
+    }
 
-    } 
-    
-     
-     .win-msg .winMsgSect {
-        width: 380px;
-        margin: 22em 0em 0 6em;
-        padding: 20px;
-
-     }
-     .win-msg .winMsgSect h2 {
-         font-size: 170%;
-     }
-     .win-msg .winMsgSect p {
-         font-size: 140%;
-     }
-     .win-msg {
-         width: 8%;
-         height: 8%;
-     }
-     .social-networks i {
-        font-size: 150%;
-        padding: 30px;
-
-}
+    .play-now {
+        font-size: 130%;
+        padding: 7px;
+    }
 
     .restart-btn button {
-        margin-left: 10em;
+        font-size: 130%;
+        padding: 7px;
+        margin-top: 0;
+    }
 
+    .win-msg .winMsgSect {
+        width: 380px;
+    }
+
+    .win-msg .winMsgSect h2 {
+        font-size: 170%;
+    }
+
+    .win-msg .winMsgSect p {
+        font-size: 140%;
+    }
+
+    .social-networks i {
+        font-size: 150%;
+        padding: 30px;
+        margin-top: 10px;
+    }
 }
-}
+
 /* For  medium screens sizes from 500px wide and down */
 
 @media screen and (max-width: 500px) {
     body {
         width: 100%;
     }
-    
+
     .logo img {
         margin: 10px 10px 10px 120px;
-        width:90px;
+        width: 90px;
         height: 90px;
-        
     }
+
     .heading {
         font-size: 250%;
     }
+
     #menu li {
-        
         font-size: 100%;
         margin-right: 80px;
-        
     }
-   
-    .container {
-        display: block;
-    } 
-    .image { 
-        margin: 5px;
+
+    .image {
+        margin-left: 40px;
+    }
+
+    .image img {
         width: 280px;
         height: 280px;
     }
-    
+
     .instruction > h2 {
         font-size: 180%;
     }
-    .benefits > h2 {
-        font-size : 175%;
+
+    .benefits>h2 {
+        font-size: 175%;
     }
+
     .benefits li {
         font-size: 100%;
     }
-     .play-now {
-         margin-left: 30%;
-     }    
 
-    .win-msg .winMsgSect {
-        width: 280px;
-        margin: 22em 0em 0 0.8em;
-        padding: 10px;
-
-     }
-     .win-msg .winMsgSect h2 {
-         font-size: 150%;
-     }
-     .win-msg .winMsgSect p {
-         font-size: 120%;
-     }
-     .front-img, .back-img {
-         padding: 5px
-
-     } 
-     .restart-btn button {
-        margin-left: 5.5em;
-        font-size: 120%;
-        padding: 10px;     
-     }
-     .social-networks i {
+    .social-networks i {
         font-size: 120%;
         padding: 25px;
-    
-     }  
-
     }
 
-   
+    .front-img,
+    .back-img {
+        padding: 5px
+    }
+
+    .win-msg .winMsgSect {
+        width: 250px;
+        padding: 10px;
+    }
+
+    .win-msg .winMsgSect h2 {
+        font-size: 150%;
+    }
+
+    .win-msg .winMsgSect p {
+        font-size: 120%;
+    }
+
+    .win-msg {
+        left: 15%;
+    }
+}

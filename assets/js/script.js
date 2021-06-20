@@ -41,12 +41,7 @@ function disableRoseCards() {
   firstRoseCard.removeEventListener('click', flipCard);
   secondRoseCard.removeEventListener('click', flipCard);
   
-  Array.from(document.getElementsByClassName('front-img')).forEach(element => {
-
-	  let cardName = element.getAttribute("alt").split(" ");
-	  if(firstRoseCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0 || secondRoseCard.dataset.name.indexOf(cardName[0].toLowerCase()) >= 0);
-    
-	});	
+  
   
   // once finish the game congrats msg, time and total flip card will shown
   CardOpen = ++CardOpen;
@@ -82,7 +77,7 @@ function resetBoard() {
 }
 // Everytime the game shuffle the card randomly
 (function shuffle() {
-  cards.forEach(card => {
+  document.querySelectorAll('.rose-card').forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
   });
