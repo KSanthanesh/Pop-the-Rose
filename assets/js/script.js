@@ -5,10 +5,10 @@ const cards = document.querySelectorAll('.rose-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstRoseCard, secondRoseCard;
-let CardOpen = 0;
-let totalMinCount,totalSecCount = 0;
+let cardOpen = 0;
+
 let totalCardFlip = 0;
-let totalSeconds = 0;
+
 // data defination
 
 function flipCard() {	
@@ -44,22 +44,22 @@ function disableRoseCards() {
   
   
   // once finish the game congrats msg, time and total flip card will shown
-  CardOpen = ++CardOpen;
+  cardOpen = ++cardOpen;
   
    //alert('Matched'+ CardOpen); 
 
    
    resetBoard();
-   if(CardOpen == 6){
+   
+   // winning msg will pop up
+   if(cardOpen == 6){
 		document.querySelector('.win-msg').style.display = "block";
-		document.querySelector('.totTime span').innerHTML = totalMinCount + ":" +totalSecCount + "sec";
-		document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
-		
+	
    }
  
 }
 
-// if not matched, both the cards will close in 1 sec.
+// if not matched, both the cards will close in 1.5 sec.
 function unflipRoseCards() {
   lockBoard = true;
 
@@ -67,15 +67,17 @@ function unflipRoseCards() {
     firstRoseCard.classList.remove('flip');
     secondRoseCard.classList.remove('flip');
     resetBoard();
-  }, 1000);
+  }, 1500);
   return;
 }
-// reset the card
+// reset the card if it is not matched
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstRoseCard, secondRoseCard] = [null, null];
 }
-// Everytime the game shuffle the card randomly
+/** Everytime the game shuffle the card randomly
+ * otherwise the cards will have in the same place
+ */
 (function shuffle() {
   document.querySelectorAll('.rose-card').forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
@@ -83,14 +85,37 @@ function resetBoard() {
   });
 })();
 
-cards.forEach(card => card.addEventListener('click', flipCard));
-// for close pop up for the winning msg
+document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', flipCard));
+// for closing window pop up for the winning msg
 
 const closePopup = () => {
   document.querySelector('.win-msg').style.display = "none";
 }
 
 // set the timer for game
+let totalMinCount = document.getElementById('minutes');
+let totalSecCount = document.getElementById('seconds');
+let sec = 0;
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+setInterval( function(){
+    document.getElementById("seconds").innerHTML=pad(++sec%60);
+    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+}, 1000);
+
+let totalFlipCard = document.getElementById('moves');
+let move =0;
+document.getElementById("moves").innerHTml = totalFlipCard;
+
+
+
+
+
+
+
+
+
+
+/** 
 setInterval(setTime, 1000);
 
 function setTime() {
@@ -98,7 +123,7 @@ function setTime() {
 	totalMinCount = pad(parseInt(totalSeconds / 60))
 	totalSecCount = pad(totalSeconds % 60);
 }
-// set the total flipcard
+
 function pad(val) {
   var valString = val + "";
   if (valString.length < 2) {
@@ -106,4 +131,5 @@ function pad(val) {
   } else {
 	return valString;
   }
-}
+  
+}  */
