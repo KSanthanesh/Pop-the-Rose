@@ -23,6 +23,9 @@
 
 
  ## Introduction
+   This project is designed to test the brain memory. This game is useful for kids and adults to test their memory power.<br>
+   I have used colourful Rose Pictures to create the pleasant feeling while playing this memory game.<br>
+   
    ### Home
    The Home page covers the following section:
    - Header and Navigation Menu
