@@ -14,15 +14,13 @@ images[5] = 'assets/images/white-rose.jpg';
 // changing images automatically
 
 function roseImg() {
-    document.slide.src = images[x];
-    if (x < images.length - 1) {
+    document.slide.src= images[x];
+    if(x < images.length - 1) {
         x++;
     } else {
         x = 0;
-  }  
+    }
+    setTimeout("roseImg()", time);
 }
+
 window.onload = roseImg;
-
-
-
-
