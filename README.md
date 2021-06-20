@@ -61,20 +61,27 @@
 
 
   ### Purpose of Website
+  Inspiration of this project comes from current covid situation where people needs a break between their normal stressful work schedule.This game relaxes people's mind and sharpen their memory power.
   
 
 ## Scope
-  ### Features
+The website covers instruction how to play. Timer function and total flip card functions are used to test how they played this game each time.
+### Features
+Header and Footer are commenly used in all pages.
   #### Header
   Header is consists of Name and Logo and located on the left side of the page. There are two menu options are available on the right side. The two menu options used are Home and Game.
   #### Footer:
   Footer is consists of Social Networks icons such as Facebook, Twitter and Instagram.
   #### Home Page
-
+  Home page contains pictures of Roses used in the game,Instruction of the game and Benefits of playing the memory game.
 
   #### Game page
-
+  The Next page is called Game Page, where the game is actually played. In the Game page, Restart button option is available to replay the game.
+  ### Pop-up Message
+  The last part of the game is pop-up message. The game completes with Congratulation popup message. it also provides time used to play the game,and number of flip cards lifted while playing the game.
   ### Future Features
+  - Integrate more games into this website, provideing more option to the player.
+  - Adding music into each type of game.
 
 
   ## Structure
