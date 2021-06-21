@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+/* globals $:false */
+
 // data declaration
 
 let cards = document.querySelectorAll('.rose-card');
@@ -26,13 +29,15 @@ function flipCard() {
   checkMatch();
 }
 
-// check the match and count the total flip card
-
+// check the card match
 function checkMatch() {
   totalCardFlip = ++totalCardFlip;
   let cardMatch = cardOptionOne.dataset.name === cardOptionTwo.dataset.name;
-
-  cardMatch ? disableRoseCards() : unflipRoseCards();
+  if (cardMatch) {
+    disableRoseCards();
+  } else {
+    unflipRoseCards();
+  }
 
 }
 // matched cards
@@ -60,7 +65,7 @@ function disableRoseCards() {
 
 const closePopup = () => {
   document.querySelector('.win-msg').style.display = "none";
-}
+};
 
 // if not matched, both the cards will close in 1.5 sec.
 function unflipRoseCards() {

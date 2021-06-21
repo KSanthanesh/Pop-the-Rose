@@ -1,3 +1,6 @@
+/* jshint esversion: 6 */
+ /* globals $:false */ 
+
 let x = 0;
 
 const time = 1500;
@@ -12,7 +15,7 @@ const images = [ 'assets/images/yellow-rose.jpg',
 ];
 
 // changing images automatically
-
+let changeimg = displayRoseImg;
 function displayRoseImg() {
     document.getElementById('image').src= images[x];
     if(x < images.length - 1) {
@@ -20,7 +23,7 @@ function displayRoseImg() {
     } else {
         x = 0;
     }
-    setTimeout("displayRoseImg()", time);
+    setTimeout(displayRoseImg,time);
 }
 
 window.onload = displayRoseImg;
