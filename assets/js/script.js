@@ -24,12 +24,12 @@ function flipCard() {
         return;
   }
   cardOptionTwo = this;
-  checkForMatch();
+  checkMatch();
 }
 
 // check the match and count the total flip card
 
-function checkForMatch() {	
+function checkMatch() {	
   totalCardFlip = ++totalCardFlip
   let cardMatch = cardOptionOne.dataset.name === cardOptionTwo.dataset.name;
   cardMatch ? disableRoseCards() : unflipRoseCards();
@@ -56,8 +56,8 @@ function disableRoseCards() {
    if(cardOpen == 6){
 		document.querySelector('.win-msg').style.display = "block";
     document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
-	
    }
+     
  
 }
 
@@ -102,9 +102,13 @@ let totalMinCount = document.getElementById('mins');
 let totalSecCount = document.getElementById('secs');
 let sec = 0;
 function pad ( val ) { return val > 9 ? val : "0" + val; }
-setInterval( function(){
+
+ let timer = setInterval( function(){
     document.getElementById("secs").innerHTML=pad(++sec%60);
     document.getElementById("mins").innerHTML=pad(parseInt(sec/60,10));
+    if (cardOpen === 6) {
+      clearInterval(timer);
+    }
 }, 1000);
 
 
@@ -118,21 +122,7 @@ setInterval( function(){
 
 
 
-/** 
-setInterval(setTime, 1000);
 
-function setTime() {
-	++totalSeconds;	  
-	totalMinCount = pad(parseInt(totalSeconds / 60))
-	totalSecCount = pad(totalSeconds % 60);
-}
 
-function pad(val) {
-  var valString = val + "";
-  if (valString.length < 2) {
-	return "0" + valString;
-  } else {
-	return valString;
-  }
-  
-}  */
+
+
