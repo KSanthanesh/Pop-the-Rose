@@ -4,7 +4,7 @@ const cards = document.querySelectorAll('.rose-card');
 
 let hasFlippedCard = false;
 let lockBoard = false;
-let firstRoseCard, secondRoseCard;
+let cardOptionOne, cardOptionTwo;
 let cardOpen = 0;
 
 let totalCardFlip = 0;
@@ -14,17 +14,16 @@ let totalCardFlip = 0;
 function flipCard() {	
   
   if (lockBoard) return;
-  if (this === firstRoseCard)
+  if (this === cardOptionOne)
   return;
 
   this.classList.add('flip');
 // first Rose card click
   if (!hasFlippedCard) {
-    hasFlippedCard = true;
-    firstRoseCard = this;
-    return;
+    [hasFlippedCard,cardOptionOne] = [true, this]
+        return;
   }
-  secondRoseCard = this;
+  cardOptionTwo = this;
   checkForMatch();
 }
 
@@ -32,21 +31,23 @@ function flipCard() {
 
 function checkForMatch() {	
   totalCardFlip = ++totalCardFlip
-  let cardMatch = firstRoseCard.dataset.name === secondRoseCard.dataset.name;
+  let cardMatch = cardOptionOne.dataset.name === cardOptionTwo.dataset.name;
   cardMatch ? disableRoseCards() : unflipRoseCards();
+  
 }
 // matched cards
 function disableRoseCards() {
 	
-  firstRoseCard.removeEventListener('click', flipCard);
-  secondRoseCard.removeEventListener('click', flipCard);
+  cardOptionOne.removeEventListener('click', flipCard);
+  cardOptionTwo.removeEventListener('click', flipCard);
+  
   
   
   
   // once finish the game congrats msg, time and total flip card will shown
   cardOpen = ++cardOpen;
   
-   //alert('Matched'+ CardOpen); 
+   //Cardalert('Matched'+ CardOpen); 
 
    
    resetBoard();
@@ -54,6 +55,7 @@ function disableRoseCards() {
    // winning msg will pop up
    if(cardOpen == 6){
 		document.querySelector('.win-msg').style.display = "block";
+    document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
 	
    }
  
@@ -64,16 +66,19 @@ function unflipRoseCards() {
   lockBoard = true;
 
   setTimeout(() => {
-    firstRoseCard.classList.remove('flip');
-    secondRoseCard.classList.remove('flip');
+    cardOptionOne.classList.remove('flip');
+    cardOptionTwo.classList.remove('flip');
     resetBoard();
+    
   }, 1500);
   return;
 }
 // reset the card if it is not matched
 function resetBoard() {
-  [hasFlippedCard, lockBoard] = [false, false];
-  [firstRoseCard, secondRoseCard] = [null, null];
+  hasFlippedCard = false;
+  lockBoard = false;
+  cardOptionOne = null;
+  cardOptionTwo = null;
 }
 /** Everytime the game shuffle the card randomly
  * otherwise the cards will have in the same place
@@ -93,18 +98,16 @@ const closePopup = () => {
 }
 
 // set the timer for game
-let totalMinCount = document.getElementById('minutes');
-let totalSecCount = document.getElementById('seconds');
+let totalMinCount = document.getElementById('mins');
+let totalSecCount = document.getElementById('secs');
 let sec = 0;
 function pad ( val ) { return val > 9 ? val : "0" + val; }
 setInterval( function(){
-    document.getElementById("seconds").innerHTML=pad(++sec%60);
-    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+    document.getElementById("secs").innerHTML=pad(++sec%60);
+    document.getElementById("mins").innerHTML=pad(parseInt(sec/60,10));
 }, 1000);
 
-let totalFlipCard = document.getElementById('moves');
-let move =0;
-document.getElementById("moves").innerHTml = totalFlipCard;
+
 
 
 
