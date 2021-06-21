@@ -165,15 +165,16 @@ footer {
     left: 27%;
     display: flex;
     color: #000; 
-    position: relative;
-        
+    position: relative;        
 }
+
 #mins {    
     border: 2px solid #000;
     padding: 2px;
     border-radius: 5px;
     font-size: 90%;
 }
+
 #secs {
     border: 2px solid #000;
     padding: 2px;
@@ -292,7 +293,6 @@ footer {
         margin-left: -200px;
     }
    
-
     .win-msg {
         left: 27%;
     }
@@ -345,8 +345,7 @@ footer {
 
     .benefits>h2 {
         font-size: 200%;
-    }
-    
+    }    
 
     .win-msg {
         left: 20%;
@@ -371,8 +370,7 @@ footer {
 
     .image {
         margin-left: 110px;
-    }
-    
+    }    
 
     .rose-game {
         width: 100%;
@@ -461,8 +459,7 @@ footer {
 
     .benefits li {
         font-size: 100%;
-    }
-    
+    }   
 
     .social-networks i {
         font-size: 120%;

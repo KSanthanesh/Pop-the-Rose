@@ -9,7 +9,7 @@ const images = [ 'assets/images/yellow-rose.jpg',
 'assets/images/purple-rose.jpg',
 'assets/images/red-rose.png',
 'assets/images/white-rose.jpg'
-]
+];
 
 // changing images automatically
 
