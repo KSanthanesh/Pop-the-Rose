@@ -15,7 +15,7 @@ const images = [ 'assets/images/yellow-rose.jpg',
 ];
 
 // changing images automatically
-let changeimg = displayRoseImg;
+
 function displayRoseImg() {
     document.getElementById('image').src= images[x];
     if(x < images.length - 1) {

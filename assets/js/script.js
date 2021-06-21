@@ -3,7 +3,7 @@
 
 // data declaration
 
-let cards = document.querySelectorAll('.rose-card');
+document.querySelectorAll('.rose-card');
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -12,9 +12,11 @@ let cardOpen = null;
 let totalCardFlip = null;
 
 
+
+
 // data defination
 
-function flipCard() {
+function openCard() {
   if (lockBoard) return;
   if (this === cardOptionOne)
     return;
@@ -39,12 +41,13 @@ function checkMatch() {
     unflipRoseCards();
   }
 
+
 }
 // matched cards
 function disableRoseCards() {
 
-  cardOptionOne.removeEventListener('click', flipCard);
-  cardOptionTwo.removeEventListener('click', flipCard);
+  cardOptionOne.removeEventListener('click', openCard);
+  cardOptionTwo.removeEventListener('click', openCard);
 
   // once finish the game congrats msg, time and total flip card will shown
   cardOpen = ++cardOpen;
@@ -57,15 +60,16 @@ function disableRoseCards() {
   if (cardOpen === 6) {
     document.querySelector('.win-msg').style.display = "block";
     document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
+    
   }
 
 
 }
 // for closing window pop up for the winning msg
 
-const closePopup = () => {
+function closePopup() {
   document.querySelector('.win-msg').style.display = "none";
-};
+}
 
 // if not matched, both the cards will close in 1.5 sec.
 function unflipRoseCards() {
@@ -98,7 +102,7 @@ function resetBoard() {
   });
 })();
 
-document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', flipCard));
+document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', openCard));
 
 
 // set the timer for game
@@ -111,8 +115,8 @@ function pad(val) {
 }
 
 let timer = setInterval(function () {
-  document.getElementById("secs").innerHTML = pad(++sec % 60);
-  document.getElementById("mins").innerHTML = pad(parseInt(sec / 60, 10));
+  totalSecCount.innerHTML = pad(++sec % 60);
+  totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
   if (cardOpen === 6) {
     clearInterval(timer);
   }
