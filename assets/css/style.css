@@ -19,7 +19,7 @@ body {
 
 .header {
     font-family: 'Lobster', cursive;
-    background-color: black;
+    background-color: #000000;
     
     height: 130px;
 }
@@ -61,7 +61,7 @@ nav {
 }
 
 #menu a:hover {
-    background-color: rgb(182, 14, 42);
+    background-color: #b60e2a;
     border-radius: 60%;
     padding: 10px;
 }
@@ -215,7 +215,7 @@ footer {
     padding: 10px;
     border-radius: 5px;
     position: absolute;
-    background: #fff;
+    background: #ffffff;
     backface-visibility: hidden;
 }
 .front-img {
@@ -263,7 +263,7 @@ footer {
 }
 
 .win-msg .winMsgSect h2 {
-    color: hsl(263, 94%, 37%);
+    color: #4a06b7;
     margin-bottom: 15px;
     font-size: 220%;
 }
