@@ -5,9 +5,9 @@
 
 document.querySelectorAll('.rose-card');
 
-let hasFlippedCard = false;
+let rotateCard = false;
 let lockBoard = false;
-let cardOptionOne, cardOptionTwo;
+let cardOptionOne, cardOptionTwo = null;
 let cardOpen = null;
 let totalCardFlip = null;
 
@@ -17,18 +17,19 @@ let totalCardFlip = null;
 // data defination
 
 function openCard() {
-  if (lockBoard) return;
-  if (this === cardOptionOne)
+  if (lockBoard) 
     return;
 
-  this.classList.add('flip');
-  // first Rose card click
-  if (!hasFlippedCard) {
-    [hasFlippedCard, cardOptionOne] = [true, this];
-    return;
-  }
-  cardOptionTwo = this;
+this.classList.add('flip');
+// first Rose card click
+if (!rotateCard) {
+  [rotateCard, cardOptionOne] = [true, this];
+  return;
+}
+rotateCard = false;
+cardOptionTwo = this;
   checkMatch();
+
 }
 
 // check the card match
@@ -37,10 +38,10 @@ function checkMatch() {
   let cardMatch = cardOptionOne.dataset.name === cardOptionTwo.dataset.name;
   if (cardMatch) {
     disableRoseCards();
+   
   } else {
     unflipRoseCards();
   }
-
 
 }
 // matched cards
@@ -85,7 +86,7 @@ function unflipRoseCards() {
 }
 // reset the card if it is not matched
 function resetBoard() {
-  hasFlippedCard = false;
+  rotateCard = false;
   lockBoard = false;
   cardOptionOne = null;
   cardOptionTwo = null;
