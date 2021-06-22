@@ -50,13 +50,13 @@ function disableRoseCards() {
   cardOptionOne.removeEventListener('click', openCard);
   cardOptionTwo.removeEventListener('click', openCard);
 
-  // once finish the game congrats msg, time and total flip card will shown
   cardOpen = ++cardOpen;
 
-  //Cardalert('Matched'+ CardOpen); 
+ 
 
   resetBoard();
-
+   
+  // once finish the game congrats msg, time and total flip card will shown
   // winning msg will pop up
   if (cardOpen === 6) {
     document.querySelector('.win-msg').style.display = "block";
@@ -110,15 +110,19 @@ document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('c
 let totalMinCount = document.getElementById('mins');
 let totalSecCount = document.getElementById('secs');
 let sec = 0;
+
 // for 2 digit 
 function pad(val) {
   return val > 9 ? val : "0" + val;
 }
 
-let timer = setInterval(function () {
+let timer = setInterval(function (flipcard) {
   totalSecCount.innerHTML = pad(++sec % 60);
   totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
+ 
+   
   if (cardOpen === 6) {
     clearInterval(timer);
   }
 }, 1000);
+

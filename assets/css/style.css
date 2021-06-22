@@ -21,7 +21,7 @@ body {
     font-family: 'Lobster', cursive;
     background-color: black;
     
-    height: 120px;
+    height: 130px;
 }
 
 .logo img {
@@ -68,14 +68,11 @@ nav {
 
 /* style the image and instruction to play */
 .container {
-    display: flex;
-    }
+    display:flex;
+    margin: 10px 100px 10px 150px;
+ }
 
-.image {
-    margin-top: 30px;
-    margin-left: -120px;
-    line-height: 100px;
-}
+
 
 .instruction {
     margin: 15px 100px 15px 15px;
@@ -285,12 +282,14 @@ footer {
 /* For  medium screens sizes from 1150px wide and down */
 
 @media screen and (max-width: 1150px) {
+
     .instruction p {
         font-size: 110%;
     }
 
-    .image {
-        margin-left: -200px;
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
     }
    
     .win-msg {
@@ -301,9 +300,7 @@ footer {
 /* For  medium screens sizes from 950px wide and down */
 
 @media screen and (max-width: 950px) {
-    body {
-        height: 80px;
-    }
+  
 
     .logo img {
         width: 100px;
