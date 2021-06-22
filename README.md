@@ -1,6 +1,6 @@
 # pop the Rose
 <img src="docs/image/home-desktop.PNG" align="left" width="200" >   
-<img src="docs/image/home-desktop-diff.PNG" align="left" width="200" >
+<img src="docs/image/home-desktop-diff.PNG" align="right" width="200" >
 <br><br><br><br><br><br>
 
 ## Types of Content
@@ -93,6 +93,30 @@ Header and Footer are commenly used in all pages.
 
   ### Wireframes
   Balsamiq Wireframes used for this website.
+  <details>
+<summary>Home-Page</summary>
+<img src="docs/wireframes/home-page.png" width="500">
+</details>
+<details>
+<summary>Game-Page</summary>
+<img src="docs/wireframes/game-page.png" width="500">
+</details>
+<details>
+<summary>Model Popup</summary>
+<img src="docs/wireframes/model-popup.png" width="500">
+</details>
+<details>
+<summary>Home-Page-Mobile</summary>
+<img src="docs/wireframes/home-mobile.png" width="500">
+</details>
+<details>
+<summary>Game-Page-Mobile</summary>
+<img src="docs/wireframes/game-mobile.png" width="500">
+</details>
+<details>
+<summary>Model-Popup-Mobile</summary>
+<img src="docs/wireframes/model-popup-mobile.png" width="500">
+</details>
   
 
   ### Colours
