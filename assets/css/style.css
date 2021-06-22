@@ -11,7 +11,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     background-color: #fcc685;
-    margin: 0 100px 30px 100px;
+    
     height: 60em;
 }
 
@@ -20,13 +20,12 @@ body {
 .header {
     font-family: 'Lobster', cursive;
     background-color: black;
-    margin-left: -100px;
-    margin-right: -100px;
+    
     height: 120px;
 }
 
 .logo img {
-    margin: 10px 10px 10px 200px;
+    margin: 10px 10px 10px 150px;
     float: left;
     padding: 1px;
     border-radius: 25%;
@@ -79,7 +78,7 @@ nav {
 }
 
 .instruction {
-    margin: 15px;
+    margin: 15px 100px 15px 15px;
 }
 
 .instruction>p {
@@ -95,9 +94,11 @@ h2 {
 
 /* style the benefits of memory game */
 
-.benefits>ul {
+
+.benefits > ul {
     list-style-type: square;
     list-style-position: inside;
+    margin: 0 100px;
 }
 
 .benefits li {
@@ -301,12 +302,7 @@ footer {
 
 @media screen and (max-width: 950px) {
     body {
-        margin: 0 10px 10px 10px;
         height: 80px;
-    }
-
-    .header {
-        margin-left: -8em;
     }
 
     .logo img {
@@ -319,7 +315,7 @@ footer {
     }
 
     nav {
-        margin-right: 5rem;
+        margin-right: 10px;
     }
 
     #menu li {
@@ -328,14 +324,20 @@ footer {
 
     .container {
         display: block;
+        margin-left:0;
     }
 
     .image {
-        margin-left: 170px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .instruction {
+        margin: 10px 80px;
     }
 
     .instruction p {
-        font-size: 100%;
+        font-size: 110%;
     }
 
     .instruction>h2 {
@@ -354,22 +356,39 @@ footer {
 /* For  medium screens sizes from 700px wide and down */
 
 @media screen and (max-width: 700px) {
+    .logo {
+        margin-left: -50px;
+    }
     .heading {
         font-size: 250%;
     }
 
     nav {
-        margin-right: 4rem;
+        margin-right: 40px;
     }
 
     #menu li {
-        margin-right: 100px;
-        font-size: 130%;
+        margin-right: 40px;
+        font-size: 150%;
     }
-
     .image {
         margin-left: 110px;
-    }    
+        
+        
+    }
+
+     .instruction {
+         margin: 10px 30px;
+     }
+    .instruction > p {
+        font-size: 100%;
+    }
+    .benefits > ul {
+        margin: 0 20px;
+    } 
+    .benefits li {
+        font-size: 100%;
+    }
 
     .rose-game {
         width: 100%;
@@ -390,6 +409,9 @@ footer {
     .play-now {
         font-size: 130%;
         padding: 7px;
+    }
+    .play-game > h2 {
+        font-size: 200%;
     }
 
     .restart-btn button {
@@ -423,42 +445,50 @@ footer {
     body {
         width: 100%;
     }
-
+    .logo {
+        margin-left: -140px;
+    }
     .logo img {
-        margin: 10px 10px 10px 120px;
         width: 90px;
         height: 90px;
     }
 
     .heading {
-        font-size: 250%;
+        font-size: 230%;
     }
 
     #menu li {
         font-size: 100%;
-        margin-right: 80px;
+        margin-right: 30px;
     }
 
-    .image {
-        margin-left: 20px;
-    }
-
+   .image {
+       margin-left: 40px;
+       margin-right: 70px;
+       
+    
+   }
     .image img {
-        width: 280px;
-        height: 280px;
+        width: 260px;
+        height: 260px;
     }
-
+    .instruction > p {
+        font-size: 95%;
+    }
     .instruction > h2 {
         font-size: 180%;
     }
 
-    .benefits>h2 {
+    .benefits > h2 {
         font-size: 175%;
     }
 
     .benefits li {
-        font-size: 100%;
-    }   
+        font-size: 95%;
+    } 
+    .benefits ul {
+        margin: 0 5px;
+    }  
 
     .social-networks i {
         font-size: 120%;
