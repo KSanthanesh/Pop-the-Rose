@@ -121,7 +121,7 @@ h2 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 120px;
-    border: 2px solid black;
+    border: 2px solid #000;
     border-radius: 60%;
     text-align: center;
 }
@@ -215,8 +215,11 @@ footer {
     padding: 10px;
     border-radius: 5px;
     position: absolute;
-    background: grey;
+    background: #fff;
     backface-visibility: hidden;
+}
+.front-img {
+    background: black;
 }
 
 .front-img {
@@ -269,7 +272,7 @@ footer {
     font-size: 180%;
 }
 
-.win-msg .winMsgSect>span {
+.win-msg .winMsgSect > span {
     position: absolute;
     right: 10px;
     top: 5px;

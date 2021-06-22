@@ -14,6 +14,7 @@ let totalCardFlip = null;
 
 
 
+
 // data defination
 
 function openCard() {
@@ -70,9 +71,10 @@ function disableRoseCards() {
 
 function closePopup() {
   document.querySelector('.win-msg').style.display = "none";
+  return;
 }
 
-// if not matched, both the cards will close in 1.5 sec.
+// if not matched, both the cards will close in 1sec.
 function unflipRoseCards() {
   lockBoard = true;
 
@@ -81,7 +83,7 @@ function unflipRoseCards() {
     cardOptionTwo.classList.remove('flip');
     resetBoard();
 
-  }, 1500);
+  }, 1000);
   return;
 }
 // reset the card if it is not matched
