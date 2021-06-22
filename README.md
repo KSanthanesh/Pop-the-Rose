@@ -120,8 +120,18 @@ Header and Footer are commenly used in all pages.
   
 
   ### Colours
+  I have used warm light and dark colours to create pleasant experience for those people to viewing this website.
+  colors used:
+  - #fcc685
+  - #000000
+  - #b60e2a
+  - #ffffff
+  - #afebf0
+  - #4a06b7
 
   ### Typography
+  I have used 'Lobster', cursive and 'Raleway', sans-serif to create this website.
+
 
   ## Technologies Used
 
@@ -135,6 +145,13 @@ Header and Footer are commenly used in all pages.
     Responsive design - To generate the mockup image.
 ## Testing
   ### Code Validation
+ - W3 Markup Validation Service- To validate HTML document, i used Validate by direct input, some errors shown, and then i fixed the errors.
+W3 HTML Validation Result:<br>
+Document checking completed. No errors or warnings to show.
+- W3 CSS Validation Service- To validate HTML document, i used validate by direct input, no errors shown in the W3 validation page.
+W3 CSS validation Result:
+Congratulations! No Error Found.
+- Jshint JavaScript Validation - 
 
 
   ### Supported Screen and Browsers
@@ -166,6 +183,16 @@ Header and Footer are commenly used in all pages.
 The above steps have created the website URL https://ksanthanesh.github.io/Pop-the-Rose/.
 
 ## Acknowledgement
+- I would like to thank my mentor Rohit Sharma and my tutors Kasia for their helpfulness, constructive feedback and guidance when needed.
+- I would like to thank the staff and students of Code Institute for their help.
+- I also like to thank Slack Community for sharing the open discussion from various students.
+- The images on this site have been taken from Google Search and pexels, and used only for education purpose to complete this project.
+- Benefits point are taken from this Website https://www.curiousworld.com/blog/importance-playing-memory-games#:~:text=Playing%20memory%20games%20can%20improve%20other%20brain%20functions%2C,to%20detail.%20Memory%20games%20can%20improve%20visual%20recognition.
+- Reference taken from those videos
+https://www.youtube.com/watch?v=Y4lOwOOK7yE
+https://www.youtube.com/watch?v=ZniVgo8U7ek
+https://www.youtube.com/watch?v=tjyDOHzKN0w
+- Thanks for Reading my READMe.md file.
 
 
 
