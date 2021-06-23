@@ -26,10 +26,12 @@ function openCard() {
   if (!rotateCard) {
     [rotateCard, cardOptionOne] = [true, this];
     return;
-  }
+  } 
+  
   rotateCard = false;
   cardOptionTwo = this;
   checkMatch();
+
 }
 
 // check the card match
@@ -113,13 +115,13 @@ function pad(val) {
   return val > 9 ? val : "0" + val;
 }
 
-timer = setInterval(function () {
+timer = setInterval(function() {
   totalSecCount.innerHTML = pad(++sec % 60);
   totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
 
   if (cardOpen === 6) {
     clearInterval(timer);
-
   }
 
 }, 1000);
+
