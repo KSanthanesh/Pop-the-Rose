@@ -11,7 +11,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     background-color: #fcc685;
-    
     height: 60em;
 }
 
@@ -20,7 +19,6 @@ body {
 .header {
     font-family: 'Lobster', cursive;
     background-color: #000000;
-    
     height: 130px;
 }
 
@@ -68,11 +66,9 @@ nav {
 
 /* style the image and instruction to play */
 .container {
-    display:flex;
+    display: flex;
     margin: 10px 100px 10px 150px;
- }
-
-
+}
 
 .instruction {
     margin: 15px 100px 15px 15px;
@@ -91,8 +87,7 @@ h2 {
 
 /* style the benefits of memory game */
 
-
-.benefits > ul {
+.benefits>ul {
     list-style-type: square;
     list-style-position: inside;
     margin: 0 100px;
@@ -149,6 +144,7 @@ footer {
 }
 
 /* style for Game page */
+
 .play-game h2 {
     margin-top: 30px;
 }
@@ -161,11 +157,11 @@ footer {
     top: 30%;
     left: 27%;
     display: flex;
-    color: #000; 
-    position: relative;        
+    color: #000;
+    position: relative;
 }
 
-#mins {    
+#mins {
     border: 2px solid #000;
     padding: 2px;
     border-radius: 5px;
@@ -184,7 +180,7 @@ footer {
     height: 700px;
     display: flex;
     flex-wrap: wrap;
-    margin: 50px auto;    
+    margin: 50px auto;
     perspective: 1000px;
 }
 
@@ -218,6 +214,7 @@ footer {
     background: #ffffff;
     backface-visibility: hidden;
 }
+
 .front-img {
     background: black;
 }
@@ -272,7 +269,7 @@ footer {
     font-size: 180%;
 }
 
-.win-msg .winMsgSect > span {
+.win-msg .winMsgSect>span {
     position: absolute;
     right: 10px;
     top: 5px;
@@ -294,7 +291,7 @@ footer {
         margin-left: 50px;
         margin-right: 50px;
     }
-   
+
     .win-msg {
         left: 27%;
     }
@@ -303,7 +300,6 @@ footer {
 /* For  medium screens sizes from 950px wide and down */
 
 @media screen and (max-width: 950px) {
-  
 
     .logo img {
         width: 100px;
@@ -324,7 +320,7 @@ footer {
 
     .container {
         display: block;
-        margin-left:0;
+        margin-left: 0;
     }
 
     .image {
@@ -332,6 +328,7 @@ footer {
         margin-right: auto;
         width: 50%;
     }
+
     .instruction {
         margin: 10px 80px;
     }
@@ -346,7 +343,7 @@ footer {
 
     .benefits>h2 {
         font-size: 200%;
-    }    
+    }
 
     .win-msg {
         left: 20%;
@@ -358,8 +355,8 @@ footer {
 @media screen and (max-width: 700px) {
     .logo {
         margin-left: -50px;
-    
     }
+
     .heading {
         font-size: 250%;
     }
@@ -372,21 +369,23 @@ footer {
         margin-right: 40px;
         font-size: 150%;
     }
+
     .image {
         margin-left: 110px;
-        
-        
     }
 
-     .instruction {
-         margin: 10px 30px;
-     }
-    .instruction > p {
+    .instruction {
+        margin: 10px 30px;
+    }
+
+    .instruction>p {
         font-size: 100%;
     }
-    .benefits > ul {
+
+    .benefits>ul {
         margin: 0 20px;
-    } 
+    }
+
     .benefits li {
         font-size: 100%;
     }
@@ -411,7 +410,8 @@ footer {
         font-size: 130%;
         padding: 7px;
     }
-    .play-game > h2 {
+
+    .play-game>h2 {
         font-size: 200%;
     }
 
@@ -443,12 +443,15 @@ footer {
 /* For  medium screens sizes from 500px wide and down */
 
 @media screen and (max-width: 500px) {
+
     body {
         width: 100%;
     }
+
     .logo {
         margin-left: -140px;
     }
+
     .logo img {
         width: 90px;
         height: 90px;
@@ -463,33 +466,35 @@ footer {
         margin-right: 30px;
     }
 
-   .image {
-       margin-left: 40px;
-       margin-right: 70px;
-       
-    
-   }
+    .image {
+        margin-left: 40px;
+        margin-right: 70px;
+    }
+
     .image img {
         width: 260px;
         height: 260px;
     }
-    .instruction > p {
+
+    .instruction>p {
         font-size: 95%;
     }
-    .instruction > h2 {
+
+    .instruction>h2 {
         font-size: 180%;
     }
 
-    .benefits > h2 {
+    .benefits>h2 {
         font-size: 175%;
     }
 
     .benefits li {
         font-size: 95%;
-    } 
+    }
+
     .benefits ul {
         margin: 0 5px;
-    }  
+    }
 
     .social-networks i {
         font-size: 120%;
