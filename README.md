@@ -2,11 +2,6 @@
 <img src="docs/image/home-desktop.PNG" align="left" width="400" height="300" >   
 <img src="docs/image/home-desktop-diff.PNG" align="center" width="400" height="300">
 
-
-
-
-
-
 ## Types of Content
 - [Introduction](#introduction)
   - [Home](#home)
@@ -144,9 +139,7 @@ Header and Footer are commenly used in all pages.
   ### Typography
   I have used 'Lobster', cursive and 'Raleway', sans-serif to create this website.
 
-
   ## Technologies Used
-
    - HTML-used for to create the website.
    - CSS- used for style the website.
    - Java Script - JavaScript allows users to interact with web pages.
@@ -155,6 +148,7 @@ Header and Footer are commenly used in all pages.
    - Google Fonts-used for the website looks more beautiful,fast and great typography
    -  Font Awesome - icons used throughout the site.
     Responsive design - To generate the mockup image.
+
 ## Testing
   ### Code Validation
  - W3 Markup Validation Service- To validate HTML document, i used Validate by direct input, some errors shown, and then i fixed the errors.
@@ -164,7 +158,6 @@ Document checking completed. No errors or warnings to show.
 W3 CSS validation Result:
 Congratulations! No Error Found.
 - Jshint JavaScript Validation - 
-
 
   ### Supported Screen and Browsers
   I have used the most common browser to test my website,<br>
