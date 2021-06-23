@@ -1,6 +1,6 @@
 # pop the Rose
-<img src="docs/image/home-desktop.PNG" align="left" width="300" >   
-<img src="docs/image/home-desktop-diff.PNG" align="center" width="300" >
+<img src="docs/image/home-desktop.PNG" align="left" width="500" >   
+<img src="docs/image/home-desktop-diff.PNG" align="right" width="500" >
 <br><br><br><br><br><br>
 
 ## Types of Content
@@ -40,14 +40,22 @@
    - Benefits of Playing Memory Card
    - Play Now Button
    - Footer
-
+   - [Home Page-Ipad-1](docs/image/home-ipad-1.PNG)
+   - [Home Page-Ipad-2](docs/image/home-ipad-2.PNG)
+   
    ### Game
    The Game Page covers the following section:
   - Header and Navigation Menu
-  - Play the game with flipped rose images
+  - Play the game with flipped rose image
+  - Timer
   - Start Again Button
-  - Once find all the roses the pop up message with Congratulations message, Timer and Total Moves.
-  - Footer
+  - Once find all the roses the pop up message with Congratulations message and Total Moves.
+  - Footer 
+
+  - [Game Page-Mobile-1](docs/image/game-mobile-1.PNG)
+  - [Game Page-Mobile-2](docs/image/game-mobile-2.PNG)
+  ### Popup Message
+  - [Popup Message](docs/image/popup-message.PNG)
 
 ## Strategy
   The website covers all the screen types, such as Pc, Laptop, Tablet and Mobile. The website is easily navigate to all the sections.
@@ -82,7 +90,7 @@ Header and Footer are commenly used in all pages.
   #### Game page
   The Next page is called Game Page, where the game is actually played. In the Game page, Restart button option is available to replay the game.
   ### Pop-up Message
-  The last part of the game is pop-up message. The game completes with Congratulation popup message. it also provides time used to play the game,and number of flip cards lifted while playing the game.
+  The last part of the game is pop-up message. The game completes with Congratulation popup message. it also provides number of flip cards lifted while playing the game.
   ### Future Features
   - Integrate more games into this website, provideing more option to the player.
   - Adding music into each type of game.
