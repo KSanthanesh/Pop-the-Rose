@@ -1,7 +1,11 @@
 # pop the Rose
-<img src="docs/image/home-desktop.PNG" align="left" width="500" >   
-<img src="docs/image/home-desktop-diff.PNG" align="right" width="500" >
-<br><br><br><br><br><br>
+<img src="docs/image/home-desktop.PNG" align="left" width="400" height="300" >   
+<img src="docs/image/home-desktop-diff.PNG" align="center" width="400" height="300">
+
+
+
+
+
 
 ## Types of Content
 - [Introduction](#introduction)
