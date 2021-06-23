@@ -10,16 +10,37 @@ let lockBoard = false;
 let cardOptionOne, cardOptionTwo = null;
 let cardOpen = null;
 let totalCardFlip = null;
-let firstClick = false;
+let firstClick = true;
 let timer;
+let totalMinCount = document.getElementById('mins');
+let totalSecCount = document.getElementById('secs');
+let sec = 0;
+
 
 // data defination
 
 function openCard() {
+  // set the timer for game
+  function pad(val) {
+    return val > 9 ? val : "0" + val;
+  }
+  
+  if (firstClick) {
+    timer = setInterval(function() {
+      totalSecCount.innerHTML = pad(++sec % 60);
+      totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
+      firstClick = false;
+    
+  if (cardOpen === 6) {
+     clearInterval(timer);
+   } 
+  }, 1000);
+}
+  
   if (lockBoard)
     return;
-  if (firstClick)
-    return;
+ 
+  
 
   this.classList.add('flip');
   // first Rose card click
@@ -70,7 +91,8 @@ function closePopup() {
 
   document.querySelector('.win-msg').style.display = "none";
   return;
-};
+ 
+}
 
 // if not matched, both the cards will close in 1sec.
 function unflipRoseCards() {
@@ -104,27 +126,12 @@ function resetBoard() {
 
 document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', openCard));
 
- // set the timer for game
- let totalMinCount = document.getElementById('mins');
- let totalSecCount = document.getElementById('secs');
- let sec = 0;
  
- // for 2 digit 
  
- function pad(val) {
-   return val > 9 ? val : "0" + val;
- }
  
- timer = setInterval(function() {
-   totalSecCount.innerHTML = pad(++sec % 60);
-   totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
-   
-   if (cardOpen === 6) {
-    clearInterval(timer);
-  }
-  
  
- }, 1000);
+ 
+
  
  
  
