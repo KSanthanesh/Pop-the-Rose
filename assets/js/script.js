@@ -31,7 +31,7 @@ function openCard() {
   rotateCard = false;
   cardOptionTwo = this;
   checkMatch();
-
+ 
 }
 
 // check the card match
@@ -104,24 +104,27 @@ function resetBoard() {
 
 document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', openCard));
 
-// set the timer for game
-let totalMinCount = document.getElementById('mins');
-let totalSecCount = document.getElementById('secs');
-let sec = 0;
-
-// for 2 digit 
-
-function pad(val) {
-  return val > 9 ? val : "0" + val;
-}
-
-timer = setInterval(function() {
-  totalSecCount.innerHTML = pad(++sec % 60);
-  totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
-
-  if (cardOpen === 6) {
+ // set the timer for game
+ let totalMinCount = document.getElementById('mins');
+ let totalSecCount = document.getElementById('secs');
+ let sec = 0;
+ 
+ // for 2 digit 
+ 
+ function pad(val) {
+   return val > 9 ? val : "0" + val;
+ }
+ 
+ timer = setInterval(function() {
+   totalSecCount.innerHTML = pad(++sec % 60);
+   totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
+   
+   if (cardOpen === 6) {
     clearInterval(timer);
   }
-
-}, 1000);
-
+  
+ 
+ }, 1000);
+ 
+ 
+ 
