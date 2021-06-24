@@ -230,8 +230,8 @@ footer {
     border: 2px solid black;
     border-radius: 60%;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 8px;
+    margin-top: 25px;
     position: absolute;
     top: auto;
     left: 50%;
@@ -252,6 +252,7 @@ footer {
 .win-msg .winMsgSect {
     background-color: #afebf0;
     width: 500px;
+    height: 300px;
     margin: auto;
     padding: 20px;
     border-radius: 5px;
@@ -277,6 +278,25 @@ footer {
     font-weight: 700;
     cursor: pointer;
 }
+.ok-btn button {
+    font-size: 150%;
+    background-color: #4a06b7;
+    width: 70px;
+    color: white;
+    font-family: 'Lobster', cursive;
+    border: 2px solid black;
+    border-radius: 40%;
+    text-align: center;
+    padding: 8px;
+    margin-top: 25px;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
 
 /* Media queries */
 /* For  medium screens sizes from 1150px wide and down */

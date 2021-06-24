@@ -3,7 +3,7 @@
 
 // data declaration
 
-document.querySelectorAll('.rose-card');
+let cards = document.querySelectorAll('.rose-card');
 
 let rotateCard = false;
 let lockBoard = false;
@@ -80,6 +80,7 @@ function disableRoseCards() {
     document.querySelector('.win-msg').style.display = "block";
     document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
     clearInterval(timer);
+    
   }   
   
 }
@@ -109,7 +110,10 @@ function resetBoard() {
   lockBoard = false;
   cardOptionOne = null;
   cardOptionTwo = null;
+
+ 
 }
+
 
 /** Everytime the game shuffle the card randomly
  * otherwise the cards will have in the same place
@@ -122,8 +126,24 @@ function resetBoard() {
   });
 })();
 
+
 document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', openCard));
 
+function restart() {
+document.querySelector('.restart-btn').addEventListener('click', function(){
+  let start = confirm("Do you want to Restart the Game?");
+  if (start === true) {
+    window.location.reload();
+    return false;
+  }
+});
+  document.querySelector('.ok-btn').addEventListener('click', function() {
+    window.location.reload();
+    return false;
+  });
+  
+
+}
 
 
 
