@@ -16,7 +16,6 @@ let totalMinCount = document.getElementById('mins');
 let totalSecCount = document.getElementById('secs');
 let sec = 0;
 
-
 // data defination
 
 function openCard() {
@@ -24,34 +23,36 @@ function openCard() {
   function pad(val) {
     return val > 9 ? val : "0" + val;
   }
-  
+
   if (firstClick) {
-    timer = setInterval(function() {
+    timer = setInterval(function () {
       totalSecCount.innerHTML = pad(++sec % 60);
       totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
       firstClick = false;
 
-      if (cardOpen === 6) {
-        clearInterval(timer);
-      }
-  }, 1000);
- 
-}
-    
+    }, 1000);
+
+    if (cardOpen === 6) {
+      clearInterval(timer);
+    }
+  }
+
   if (lockBoard)
     return;
-  
+  if (this === cardOptionOne)
+    return;
+
   this.classList.add('flip');
+
   // first Rose card click
   if (!rotateCard) {
     [rotateCard, cardOptionOne] = [true, this];
     return;
-  } 
-  
+  }
+
   rotateCard = false;
   cardOptionTwo = this;
   checkMatch();
- 
 }
 
 // check the card match
@@ -60,7 +61,6 @@ function checkMatch() {
   let cardMatch = cardOptionOne.dataset.name === cardOptionTwo.dataset.name;
   if (cardMatch) {
     disableRoseCards();
-
   } else {
     unflipRoseCards();
   }
@@ -84,13 +84,12 @@ function disableRoseCards() {
     document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
   }
 }
+
 // for closing window pop up for the winning msg
 
 function closePopup() {
-
   document.querySelector('.win-msg').style.display = "none";
   return;
- 
 }
 
 // if not matched, both the cards will close in 1sec.
@@ -125,12 +124,11 @@ function resetBoard() {
 
 document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', openCard));
 
- 
- 
- 
- 
- 
 
- 
- 
- 
+
+
+
+
+
+
+
