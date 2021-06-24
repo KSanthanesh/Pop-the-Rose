@@ -30,18 +30,17 @@ function openCard() {
       totalSecCount.innerHTML = pad(++sec % 60);
       totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
       firstClick = false;
-    
-  if (cardOpen === 6) {
-     clearInterval(timer);
-   } 
+
+      if (cardOpen === 6) {
+        clearInterval(timer);
+      }
   }, 1000);
+ 
 }
-  
+    
   if (lockBoard)
     return;
- 
   
-
   this.classList.add('flip');
   // first Rose card click
   if (!rotateCard) {
