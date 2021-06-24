@@ -8,7 +8,7 @@ document.querySelectorAll('.rose-card');
 let rotateCard = false;
 let lockBoard = false;
 let cardOptionOne, cardOptionTwo = null;
-let cardOpen = null;
+let cardOpen = 0;
 let totalCardFlip = null;
 let firstClick = true;
 let timer;
@@ -30,17 +30,14 @@ function openCard() {
       totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
       firstClick = false;
 
-    }, 1000);
+    }, 1000); 
 
-    if (cardOpen === 6) {
-      clearInterval(timer);
-    }
   }
+ 
 
   if (lockBoard)
     return;
-  if (this === cardOptionOne)
-    return;
+    
 
   this.classList.add('flip');
 
@@ -78,16 +75,19 @@ function disableRoseCards() {
 
   // once finish the game congrats msg, time and total flip card will shown
   // winning msg will pop up
-
+  
   if (cardOpen === 6) {
     document.querySelector('.win-msg').style.display = "block";
     document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
-  }
+    clearInterval(timer);
+  }   
+  
 }
 
 // for closing window pop up for the winning msg
 
 function closePopup() {
+
   document.querySelector('.win-msg').style.display = "none";
   return;
 }
