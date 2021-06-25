@@ -115,8 +115,8 @@ function resetBoard() {
 }
 
 
-/** Everytime the game shuffle the card randomly
- * otherwise the cards will have in the same place
+/** The Cards are shuffled radomly
+ * otherwise the cards will remain in the same position
  */
 
 (function shuffle() {
@@ -129,8 +129,8 @@ function resetBoard() {
 
 document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', openCard));
 
-/** if the user press the Restart Button confirm message box will ask to confirm 
- * There is ok button in the win-msg box to Restart the game
+/** when restart button choosen the popup message will appear, allowing to confirm to continue the game
+ * There is ok button in the winning msg box to Restart the game
  */
 function restart() {
 document.querySelector('.restart-btn').addEventListener('click', function(){

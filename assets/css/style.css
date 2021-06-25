@@ -354,13 +354,14 @@ footer {
 
     .container {
         display: block;
-        margin-left: 0;
+        
     }
 
     .image {
-        margin-left: 30%;
-        margin-right: auto;
-        width: 50%;
+       margin-left: 20%;
+       margin-right: 25%;
+
+
     }
 
     .instruction {
@@ -415,9 +416,12 @@ footer {
     }
 
     .image {
-        margin-left: 20%;
-        margin-right: 30%;
-        width: 40%;
+        margin-left: 50px;
+        
+    }
+    .image img {
+        width: 350px;
+        height: 320px;
     }
 
     .instruction {
@@ -516,10 +520,6 @@ footer {
        
     }
 
-    .image {
-        margin-left: 40px;
-        margin-right: 70px;
-    }
 
     .image img {
         width: 260px;
@@ -578,3 +578,4 @@ footer {
     }
     
 }
+
