@@ -29,7 +29,7 @@
    This project is designed to test the brain memory. This game is useful for kids and adults to test their memory power.<br>
    I have used colourful Rose Pictures to create the pleasant feeling while playing this memory game.<br>
    The Webpage is categorised into two main sections, such as Home and Game.<br>
-   Congratulation Message will pop up end of each game with stating time taken vs total number of flipped cards lifted. This function encourage the players to grade their memory power each time they play this memory game.
+   Timer and Congratulation Message will pop up end of each game with total number of flipped cards lifted. These functions are encourage the players to grade their memory power each time they play this memory game.
 
    ### Home
    The Home page covers the following section:
@@ -47,12 +47,13 @@
   - Header and Navigation Menu
   - Play the game with flipped rose image
   - Timer
-  - Start Again Button
+  - Start Again Button, with confirmation of Restart the game alert message.
   - Once find all the roses the pop up message with Congratulations message and Total Moves.
   - Footer 
 
   - [Game Page-Mobile-1](docs/image/game-mobile-1.PNG)
   - [Game Page-Mobile-2](docs/image/game-mobile-2.PNG)
+  - [confirm Restart alert message]
   ### Popup Message
   - [Popup Message](docs/image/popup-message.PNG)
 
