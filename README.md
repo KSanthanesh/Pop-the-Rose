@@ -53,7 +53,8 @@
 
   - [Game Page-Mobile-1](docs/image/game-mobile-1.PNG)
   - [Game Page-Mobile-2](docs/image/game-mobile-2.PNG)
-  - [confirm Restart alert message]
+  - [Confirm Restart alert message](docs/image/game-testcase-restart.PNG)
+
   ### Popup Message
   - [Popup Message](docs/image/popup-message.PNG)
 
@@ -88,7 +89,7 @@ Header and Footer are commenly used in all pages.
   Home page contains pictures of Roses used in the game,Instruction of the game and Benefits of playing the memory game.
 
   #### Game page
-  The Next page is called Game Page, where the game is actually played. In the Game page, Restart button option is available to replay the game.
+  The Next page is called Game Page, where the game is actually played. In the Game page, Restart button option is available to replay the game. After clicking the restart button, the popup message will appears. Giving an option for the player to either continue the game or restart the game.
   ### Pop-up Message
   The last part of the game is pop-up message. The game completes with Congratulation popup message. it also provides number of flip cards lifted while playing the game.
   ### Future Features
@@ -158,7 +159,8 @@ Document checking completed. No errors or warnings to show.
 - W3 CSS Validation Service- To validate HTML document, i used validate by direct input, no errors shown in the W3 validation page.
 W3 CSS validation Result:
 Congratulations! No Error Found.
-- Jshint JavaScript Validation - 
+- Jshint JavaScript Validation - To validate Java Script file. During the validation process there was a error message stating that there is a one unused variable named as closePopup. But htis variable was used in the game.html file.
+- [game.html-closePopup](docs/image/game.html.closepopup.PNG)
 
   ### Supported Screen and Browsers
   I have used the most common browser to test my website,<br>
@@ -170,11 +172,33 @@ Congratulations! No Error Found.
   I have verified the website in various mobiles like Galaxy S9,S3, i phone 6,7,8 and xiaomi max3 and makesure the website works properly.
 
   ### Features Testing
-  All the features tabs are Responding properly as per design.
+  ### Home -Actual Test Case
+  Four testing options in main page, which are Pop the Rose, Home,Game and Playnow button.<br>
+  Pop the Rose heading and Home Navigation are designed to bring the user back to the home page.Testing also proves that these
+  options worked as per design. Game navigation and Play Now button are designed to bring the user to the Game page.Testing proves that these options worked as per designs.<br>
+  There are three Social media links attached in the both the home and game pages.These social media navigators worked as per design requirements.For example, when click the Facebook button it brings to the Facebook main page.
+ - [Home-TestCase-1](docs/image/home-testcase-1.PNG)
+ - [Home-TestCase-2](docs/image/home-testcase-2.PNG)
+
+  ### Game -Actual Test Case
+  The game page have 12 flip cards. The game is designed to look for a pair of same colour rose images. When same colour of roses lifted the card will remain open. Otherwise both cards will close. The testing result meets the design requirements. The timer option will start when the first card is lifted, and the timer will stop when the last pair of cards choosen correctly. The test results also proofs that the timer concept works properly as described.<br>
+  The Start Again button is available to allow the user to restart the game in the middle of the current game. The popup confirm message will appear, allow the user to choose either to move into a new game or continue to the current game. The test proofs that it works as per design.
+  - [Game-TestCase-1](docs/image/game-testcase-opencard.PNG)
+  - [Game-TestCase-2](docs/image/game-testcase-restart.PNG)
+
+  ### Popup Message - Acutal Test Case
+    When the last pair of cards are choosen correctly, the popup message will appear to congrajulate the user with the number of times the cards are lifted.<br> 
+    There is a cross X mark option to close the Message box.<br>
+    Ok button brings the user to go to game page, and allow the user to play the next game. Test proofs that it wirks as per design.
+  - [Popup-TestCase-1](docs/image/popup-testcase.PNG)
+  
+
 
   ## Fixed Bugs
+  I have Challenging introducing the time option into the game. The timer starts when the user enters into the game page, although the game is not started and the timer was running incorrectly. Then I managed to resolve this issues with the help of tutor suppor and mentor support.
 
   ## Deployment
+  First we need to go to github website the create a new repositary using code Institute Template. Followed by giving a new name of the website.Then need to click the create repositary button. After click the button it will bring us to go to another page, which contains the green button labelled as Gitpod.Click the Gitpod button will bring us to the Gitpod Workspace for coding screen.
   ### Gitpod
     Used Gitpod Workspace for coding. To preview the browser window need to type "python3 -m http.server" in the terminal window at the bottom.Afterthat, have to do git add for add files or remove files and do git commit for reasoning and do the git push for git hub repositary website.
 
