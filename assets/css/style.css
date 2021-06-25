@@ -129,8 +129,8 @@ h2 {
 /* Style the footer here */
 
 footer {
-    margin-top: 70px;
-    height: auto;
+    margin-top: 60px;
+    height: 50px;;
 }
 
 .social-networks {
@@ -390,7 +390,7 @@ footer {
 @media screen and (max-width: 700px) {
     .second-page {
         width: 103%;
-        height: 900px;
+        height: 960px;
     }
 
     .header {
@@ -497,8 +497,9 @@ footer {
 
 @media screen and (max-width: 500px) {
 
-    body {
+    .second-page {
         width: 100%;
+        height: 1120px;
     }
 
     .logo {
@@ -548,10 +549,13 @@ footer {
     .benefits ul {
         margin: 0 5px;
     }
+    footer {
+        margin-top: 30px;
+    }
 
     .social-networks i {
         font-size: 120%;
-        padding: 25px;
+        padding:25px;
     }
 
     .front-img,
@@ -575,6 +579,9 @@ footer {
 
     .win-msg {
         left: 14%;
+    }
+    .restart-btn {
+        margin-bottom: 0;
     }
     
 }
