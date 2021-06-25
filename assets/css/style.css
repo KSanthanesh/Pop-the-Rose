@@ -18,8 +18,9 @@ body {
 
 .header {
     font-family: 'Lobster', cursive;
-    background-color: #000000;
+    background-color: #000;
     height: 130px;
+    width: 100%;
 }
 
 .logo img {
@@ -144,6 +145,7 @@ footer {
 }
 
 /* style for Game page */
+
 
 .play-game h2 {
     margin-top: 30px;
@@ -311,6 +313,9 @@ footer {
         margin-left: 50px;
         margin-right: 50px;
     }
+    nav {
+        margin-right: 80px;
+    }
 
     .win-msg {
         left: 27%;
@@ -320,7 +325,7 @@ footer {
 /* For  medium screens sizes from 950px wide and down */
 
 @media screen and (max-width: 950px) {
-
+    
     .logo img {
         width: 100px;
         height: 100px;
@@ -331,11 +336,12 @@ footer {
     }
 
     nav {
-        margin-right: 10px;
+        margin-right: 30px;
     }
 
     #menu li {
         margin-right: 100px;
+        margin-bottom: 10px;
     }
 
     .container {
@@ -373,6 +379,11 @@ footer {
 /* For  medium screens sizes from 700px wide and down */
 
 @media screen and (max-width: 700px) {
+
+    .header {
+        width: 100%;
+    }
+    
     .logo {
         margin-left: -50px;
     }
@@ -387,6 +398,7 @@ footer {
 
     #menu li {
         margin-right: 40px;
+        margin-bottom: 10px;
         font-size: 150%;
     }
 
@@ -483,8 +495,9 @@ footer {
     }
 
     #menu li {
-        font-size: 100%;
+        font-size: 125%;
         margin-right: 30px;
+       
     }
 
     .image {

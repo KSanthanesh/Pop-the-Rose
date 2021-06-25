@@ -129,6 +129,9 @@ function resetBoard() {
 
 document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', openCard));
 
+/** if the user press the Restart Button confirm message box will ask to confirm 
+ * There is ok button in the win-msg box to Restart the game
+ */
 function restart() {
 document.querySelector('.restart-btn').addEventListener('click', function(){
   let start = confirm("Do you want to Restart the Game?");
@@ -140,10 +143,10 @@ document.querySelector('.restart-btn').addEventListener('click', function(){
   document.querySelector('.ok-btn').addEventListener('click', function() {
     window.location.reload();
     return false;
-  });
-  
+  }); 
 
 }
+
 
 
 
