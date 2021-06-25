@@ -11,7 +11,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     background-color: #fcc685;
-    height: 60em;
+    
 }
 
 /* style the heading and logo */
@@ -87,6 +87,9 @@ h2 {
 }
 
 /* style the benefits of memory game */
+.benefits {
+    margin-bottom: 10px;
+}
 
 .benefits>ul {
     list-style-type: square;
@@ -109,7 +112,8 @@ h2 {
 .play-now {
     font-size: 150%;
     font-family: 'Lobster', cursive;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px;
     position: absolute;
     top: auto;
@@ -125,7 +129,8 @@ h2 {
 /* Style the footer here */
 
 footer {
-    height: 80px;
+    margin-top: 70px;
+    height: auto;
 }
 
 .social-networks {
@@ -139,8 +144,8 @@ footer {
 
 .social-networks i {
     font-size: 160%;
-    margin-top: 10px;
-    padding: 80px;
+    margin-top: 20px;
+    padding: 30px 80px 20px 80px;
     color: black;
 }
 
@@ -182,7 +187,7 @@ footer {
     height: 700px;
     display: flex;
     flex-wrap: wrap;
-    margin: 50px auto;
+    margin: 50px auto 20px auto;
     perspective: 1000px;
 }
 
@@ -226,6 +231,9 @@ footer {
 }
 
 /* Restart Button */
+.restart {
+    margin-bottom: 50px;
+}
 .restart-btn button {
     font-size: 150%;
     font-family: 'Lobster', cursive;
@@ -350,7 +358,7 @@ footer {
     }
 
     .image {
-        margin-left: auto;
+        margin-left: 30%;
         margin-right: auto;
         width: 50%;
     }
@@ -379,9 +387,13 @@ footer {
 /* For  medium screens sizes from 700px wide and down */
 
 @media screen and (max-width: 700px) {
+    .second-page {
+        width: 103%;
+        height: 900px;
+    }
 
     .header {
-        width: 100%;
+        width: 103%;
     }
     
     .logo {
@@ -403,7 +415,9 @@ footer {
     }
 
     .image {
-        margin-left: 110px;
+        margin-left: 20%;
+        margin-right: 30%;
+        width: 40%;
     }
 
     .instruction {
@@ -446,6 +460,9 @@ footer {
     .play-game>h2 {
         font-size: 200%;
     }
+    .restart-btn {
+        margin-bottom: 20px;
+    }
 
     .restart-btn button {
         font-size: 130%;
@@ -468,8 +485,7 @@ footer {
 
     .social-networks i {
         font-size: 150%;
-        padding: 30px;
-        margin-top: 10px;
+        padding: 10px 30px;
     }
 }
 
@@ -508,6 +524,9 @@ footer {
     .image img {
         width: 260px;
         height: 260px;
+    }
+    .instruction {
+        margin: 10px;
     }
 
     .instruction>p {
