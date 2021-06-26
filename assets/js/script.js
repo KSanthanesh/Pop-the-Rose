@@ -65,6 +65,7 @@ function checkMatch() {
   } else {
     unflipRoseCards();
   }
+  
 }
 
 // matched cards
@@ -72,10 +73,10 @@ function checkMatch() {
 function disableRoseCards() {
   cardOptionOne.removeEventListener('click', openCard);
   cardOptionTwo.removeEventListener('click', openCard);
-
   cardOpen = ++cardOpen;
 
   resetBoard();
+  
 
   // once finish the game congrats msg, time and total flip card will shown
   // winning msg will pop up
@@ -99,7 +100,6 @@ closePopup();
 // if not matched, both the cards will close in 1sec.
 function unflipRoseCards() {
   lockBoard = true;
-
   setTimeout(() => {
     cardOptionOne.classList.remove('flip');
     cardOptionTwo.classList.remove('flip');
