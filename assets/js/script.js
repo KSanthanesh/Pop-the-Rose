@@ -27,10 +27,14 @@ function openCard() {
   if (firstClick) {
     timer = setInterval(function () {
       totalSecCount.innerHTML = pad(++sec % 60);
-      totalMinCount.innerHTML = pad(parseInt(sec/60, 10));
+      totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
       firstClick = false;
-    }, 1000); 
 
+    }, 1000); 
+    if (cardOpen === 6) {
+      clearInterval();
+    } 
+  
   }
  
 
@@ -135,15 +139,20 @@ document.querySelector('.restart-btn').addEventListener('click', function(){
   let start = confirm("Do you want to Restart the Game?");
   if (start === true) {
     window.location.reload();
+    clearInterval(timer);
     return false; 
+    
   }
+  
   
 });
   document.querySelector('.ok-btn').addEventListener('click', function() {
     window.location.reload();
+    
     return false;
+    
   }); 
-  clearInterval(timer);
+  
 }
 
 
