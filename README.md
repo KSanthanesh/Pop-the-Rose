@@ -159,8 +159,7 @@ Document checking completed. No errors or warnings to show.
 - W3 CSS Validation Service- To validate HTML document, i used validate by direct input, no errors shown in the W3 validation page.
 W3 CSS validation Result:
 Congratulations! No Error Found.
-- Jshint JavaScript Validation - To validate Java Script file. During the validation process there was a error message stating that there is a one unused variable named as closePopup. But htis variable was used in the game.html file.
-- [game.html-closePopup](docs/image/game.html.closepopup.PNG)
+- Jshint JavaScript Validation - To validate Java Script file. no errors or Warning shown in JShint validation Page.
 
   ### Supported Screen and Browsers
   I have used the most common browser to test my website,<br>

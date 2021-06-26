@@ -3,7 +3,7 @@
 
 // data declaration
 
-let cards = document.querySelectorAll('.rose-card');
+document.querySelectorAll('.rose-card');
 
 let rotateCard = false;
 let lockBoard = false;
@@ -25,22 +25,23 @@ function openCard() {
   }
 
   if (firstClick) {
+    console.log(1);
     timer = setInterval(function () {
-      totalSecCount.innerHTML = pad(++sec % 60);
+      sec++;
+      totalSecCount.innerHTML = pad(sec % 60);
       totalMinCount.innerHTML = pad(parseInt(sec / 60, 10));
-      firstClick = false;
 
-    }, 1000); 
-    if (cardOpen === 6) {
-      clearInterval();
-    } 
-  
+    }, 1000);
+    firstClick = false;
+
   }
- 
+
+  if (cardOpen === 6) {
+    clearInterval(timer);
+  }
 
   if (lockBoard)
     return;
-    
 
   this.classList.add('flip');
 
@@ -78,13 +79,12 @@ function disableRoseCards() {
 
   // once finish the game congrats msg, time and total flip card will shown
   // winning msg will pop up
-  
+
   if (cardOpen === 6) {
     document.querySelector('.win-msg').style.display = "block";
     document.querySelector('.totFlipCount span').innerHTML = totalCardFlip;
-    clearInterval(timer);  
-  }   
-  
+    clearInterval(timer);
+  }
 }
 
 // for closing window pop up for the winning msg
@@ -94,6 +94,7 @@ function closePopup() {
   document.querySelector('.win-msg').style.display = "none";
   return;
 }
+closePopup();
 
 // if not matched, both the cards will close in 1sec.
 function unflipRoseCards() {
@@ -112,12 +113,9 @@ function resetBoard() {
   lockBoard = false;
   cardOptionOne = null;
   cardOptionTwo = null;
-
- 
 }
 
-
-/** The Cards are shuffled radomly
+/** The Cards are shuffled randomly
  * otherwise the cards will remain in the same position
  */
 
@@ -128,32 +126,28 @@ function resetBoard() {
   });
 })();
 
-
 document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('click', openCard));
 
 /** when restart button choosen the popup message will appear, allowing to confirm to continue the game
  * There is ok button in the winning msg box to Restart the game
  */
 function restart() {
-document.querySelector('.restart-btn').addEventListener('click', function(){
-  let start = confirm("Do you want to Restart the Game?");
-  if (start === true) {
+  document.querySelector('.restart-btn').addEventListener('click', function () {
+    let start = confirm("Do you want to Restart the Game?");
+    if (start === true) {
+      window.location.reload();
+      clearInterval(timer);
+      return false;
+    }
+
+  });
+  document.querySelector('.ok-btn').addEventListener('click', function () {
     window.location.reload();
-    clearInterval(timer);
-    return false; 
-    
-  }
-  
-  
-});
-  document.querySelector('.ok-btn').addEventListener('click', function() {
-    window.location.reload();
-    
     return false;
-    
-  }); 
-  
+  });
+
 }
+restart();
 
 
 

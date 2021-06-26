@@ -11,7 +11,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     background-color: #fcc685;
-    
+    height: fit-content;
 }
 
 /* style the heading and logo */
@@ -66,13 +66,13 @@ nav {
 }
 
 /* style the image and instruction to play */
-.container {
+.box {
     display: flex;
     margin: 10px 100px 10px 150px;
 }
 
 .instruction {
-    margin: 15px 100px 15px 15px;
+    margin-left: 60px;
 }
 
 .instruction>p {
@@ -112,7 +112,7 @@ h2 {
 .play-now {
     font-size: 150%;
     font-family: 'Lobster', cursive;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 20px;
     padding: 10px;
     position: absolute;
@@ -130,7 +130,7 @@ h2 {
 
 footer {
     margin-top: 60px;
-    height: 50px;;
+    height: fit-content;
 }
 
 .social-networks {
@@ -150,7 +150,6 @@ footer {
 }
 
 /* style for Game page */
-
 
 .play-game h2 {
     margin-top: 30px;
@@ -231,9 +230,7 @@ footer {
 }
 
 /* Restart Button */
-.restart {
-    margin-bottom: 50px;
-}
+
 .restart-btn button {
     font-size: 150%;
     font-family: 'Lobster', cursive;
@@ -248,6 +245,10 @@ footer {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     cursor: pointer;
+}
+
+.game-footer {
+    margin-top: 70px;
 }
 
 .win-msg {
@@ -288,6 +289,7 @@ footer {
     font-weight: 700;
     cursor: pointer;
 }
+
 .ok-btn button {
     font-size: 150%;
     background-color: #4a06b7;
@@ -307,7 +309,6 @@ footer {
     cursor: pointer;
 }
 
-
 /* Media queries */
 /* For  medium screens sizes from 1150px wide and down */
 
@@ -317,10 +318,11 @@ footer {
         font-size: 110%;
     }
 
-    .container {
+    .box {
         margin-left: 50px;
         margin-right: 50px;
     }
+
     nav {
         margin-right: 80px;
     }
@@ -333,7 +335,7 @@ footer {
 /* For  medium screens sizes from 950px wide and down */
 
 @media screen and (max-width: 950px) {
-    
+
     .logo img {
         width: 100px;
         height: 100px;
@@ -352,16 +354,15 @@ footer {
         margin-bottom: 10px;
     }
 
-    .container {
+    .box {
         display: block;
-        
     }
 
     .image {
-       margin-left: 20%;
-       margin-right: 25%;
-
-
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 
     .instruction {
@@ -383,6 +384,10 @@ footer {
     .win-msg {
         left: 20%;
     }
+
+    footer {
+        margin-top: 70px;
+    }
 }
 
 /* For  medium screens sizes from 700px wide and down */
@@ -396,7 +401,7 @@ footer {
     .header {
         width: 103%;
     }
-    
+
     .logo {
         margin-left: -50px;
     }
@@ -415,12 +420,15 @@ footer {
         font-size: 150%;
     }
 
-    .image {
-        margin-left: 50px;
-        
+    .box>.image {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
+
     .image img {
-        width: 350px;
+        width: 320px;
         height: 320px;
     }
 
@@ -464,6 +472,7 @@ footer {
     .play-game>h2 {
         font-size: 200%;
     }
+
     .restart-btn {
         margin-bottom: 20px;
     }
@@ -497,11 +506,6 @@ footer {
 
 @media screen and (max-width: 500px) {
 
-    .second-page {
-        width: 100%;
-        height: 1120px;
-    }
-
     .logo {
         margin-left: -140px;
     }
@@ -518,14 +522,19 @@ footer {
     #menu li {
         font-size: 125%;
         margin-right: 30px;
-       
     }
 
+    .box>.image {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
 
     .image img {
-        width: 260px;
+        width: 280px;
         height: 260px;
     }
+
     .instruction {
         margin: 10px;
     }
@@ -549,13 +558,14 @@ footer {
     .benefits ul {
         margin: 0 5px;
     }
+
     footer {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .social-networks i {
         font-size: 120%;
-        padding:25px;
+        padding: 25px;
     }
 
     .front-img,
@@ -580,9 +590,22 @@ footer {
     .win-msg {
         left: 14%;
     }
+
     .restart-btn {
         margin-bottom: 0;
     }
-    
 }
 
+/* For  medium screens sizes from 400px wide and down */
+
+@media screen and (max-width: 400px) {
+    .box>.image {
+        margin-left: 0;
+    }
+
+    .image img {
+        width: 240px;
+        height: 240px;
+    }
+
+}
