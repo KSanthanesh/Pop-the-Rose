@@ -76,7 +76,7 @@ nav {
 }
 
 .instruction {
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
 .instruction>p {
@@ -87,7 +87,7 @@ h2 {
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size: 250%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /* style the benefits of memory game */
