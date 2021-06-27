@@ -70,6 +70,10 @@ nav {
     display: flex;
     margin: 10px 100px 10px 150px;
 }
+.image img {
+    width: 400px;
+    height: 400px;
+}
 
 .instruction {
     margin-left: 60px;
@@ -359,10 +363,10 @@ footer {
     }
 
     .image {
-        margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+
     }
 
     .instruction {
