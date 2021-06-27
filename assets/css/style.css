@@ -66,21 +66,22 @@ nav {
 }
 
 /* style the image and instruction to play */
-.box {
-    display: flex;
-    margin: 10px 100px 10px 150px;
-}
-.image img {
-    width: 400px;
-    height: 400px;
-}
 
-.instruction {
-    margin-left: 40px;
+.box { 
+   margin: 60px auto;
+   width: 80%;
+} 
+
+.image img {
+   float: left;
+   width: 400px;
+   height: 360px;
+   padding: 0 10px 0 0;
 }
 
 .instruction>p {
     font-size: 120%;
+    text-align: justify;
 }
 
 h2 {
@@ -91,6 +92,7 @@ h2 {
 }
 
 /* style the benefits of memory game */
+
 .benefits {
     margin-bottom: 10px;
 }
@@ -98,7 +100,7 @@ h2 {
 .benefits>ul {
     list-style-type: square;
     list-style-position: inside;
-    margin: 0 100px;
+    margin: 0 80px;
 }
 
 .benefits li {
@@ -323,8 +325,7 @@ footer {
     }
 
     .box {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin: 30px auto;
     }
 
     nav {
@@ -366,11 +367,10 @@ footer {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-
     }
 
     .instruction {
-        margin: 10px 80px;
+        margin: 10px 60px;
     }
 
     .instruction p {
@@ -424,11 +424,9 @@ footer {
         font-size: 150%;
     }
 
-    .box>.image {
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    .image {
+       margin: 15px auto;
+        width: 70%;
     }
 
     .image img {
@@ -528,9 +526,8 @@ footer {
         margin-right: 30px;
     }
 
-    .box>.image {
-        margin-left: auto;
-        margin-right: auto;
+    .image {
+        margin: 20px auto;
         width: 70%;
     }
 
@@ -599,12 +596,12 @@ footer {
         margin-bottom: 0;
     }
 }
-
 /* For  medium screens sizes from 400px wide and down */
 
 @media screen and (max-width: 400px) {
-    .box>.image {
-        margin-left: 0;
+    .image {
+        margin: 10px auto;
+        width: 80%;
     }
 
     .image img {
@@ -613,3 +610,4 @@ footer {
     }
 
 }
+
