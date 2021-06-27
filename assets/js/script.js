@@ -61,9 +61,9 @@ function checkMatch() {
   totalCardFlip = ++totalCardFlip;
   let cardMatch = cardOptionOne.dataset.name === cardOptionTwo.dataset.name;
   if (cardMatch) {
-    disableRoseCards();
+    disableRoseCards(); 
   } else {
-    unflipRoseCards();
+    unflipRoseCards(); 
   }
   
 }
@@ -104,7 +104,7 @@ function unflipRoseCards() {
     cardOptionOne.classList.remove('flip');
     cardOptionTwo.classList.remove('flip');
     resetBoard();
-  }, 1000);
+  }, 500);
   return;
 }
 // reset the card if it is not matched
@@ -123,6 +123,7 @@ function resetBoard() {
   document.querySelectorAll('.rose-card').forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
+    
   });
 })();
 
