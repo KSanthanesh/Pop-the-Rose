@@ -20,6 +20,8 @@
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Bugs](#bugs)
+   - [Fixed Bugs](#fixed-bugs)
+   - [Unfixed Bugs](#unfixed-bugs)
 - [Deployment](#deployment)
 - [Acknowledgement](#acknowledgement)
 
@@ -150,7 +152,8 @@ Header and Footer are commenly used in all pages.
    - Google Fonts-used for the website looks more beautiful,fast and great typography
    -  Font Awesome - icons used throughout the site.
     Responsive design - To generate the mockup image.
-
+   - Python Tutor - to check how the Java Script code behaves in each line.
+   - 
 ## Testing
   ### Code Validation
  - W3 Markup Validation Service- To validate HTML document, i used Validate by direct input, some errors shown, and then i fixed the errors.
@@ -192,10 +195,12 @@ Congratulations! No Error Found.
   - [Popup-TestCase-1](docs/image/popup-testcase.PNG)
   
 
-
-  ## Fixed Bugs
+  ## Bugs
+  ### Fixed Bugs
   I have Challenging introducing the time option into the game. The timer starts when the user enters into the game page, although the game is not started and the timer was running incorrectly. Then I managed to resolve this issues with the help of tutor suppor and mentor support.
-
+  ### Unfixed Bugs
+  Improvement required as follows:
+  1. When we double click the same card twice, the programme behaves incorrectly, such as the card gets stucked.Future work is required to fix this Bug.Instruction is written to makesure the user does not click the same card twice.
   ## Deployment
   First we need to go to github website the create a new repositary using code Institute Template. Followed by giving a new name of the website.Then need to click the create repositary button. After click the button it will bring us to go to another page, which contains the green button labelled as Gitpod.Click the Gitpod button will bring us to the Gitpod Workspace for coding screen.
   ### Gitpod
@@ -216,6 +221,7 @@ The above steps have created the website URL https://ksanthanesh.github.io/Pop-t
 - I would like to thank the staff and students of Code Institute for their help.
 - I also like to thank Slack Community for sharing the open discussion from various students.
 - The images on this site have been taken from Google Search and pexels, and used only for education purpose to complete this project.
+- https://www.favicon.cc/ -Favicon icon created using this website.
 - Benefits point are taken from this Website https://www.curiousworld.com/blog/importance-playing-memory-games#:~:text=Playing%20memory%20games%20can%20improve%20other%20brain%20functions%2C,to%20detail.%20Memory%20games%20can%20improve%20visual%20recognition.
 - Reference taken from those videos
 https://www.youtube.com/watch?v=Y4lOwOOK7yE
