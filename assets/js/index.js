@@ -5,7 +5,8 @@ let x = 0;
 const time = 1500;
 
 // Array images details
-const images = ['assets/images/yellow-rose.jpg',
+const images = [
+    'assets/images/yellow-rose.jpg',
     'assets/images/black-rose.png',
     'assets/images/pink-rose.jpg',
     'assets/images/purple-rose.jpg',
