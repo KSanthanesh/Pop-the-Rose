@@ -189,9 +189,10 @@ Congratulations! No Error Found.
   - [Game-TestCase-2](docs/image/game-testcase-restart.PNG)
 
   ### Popup Message - Acutal Test Case
-    When the last pair of cards are choosen correctly, the popup message will appear to congrajulate the user with the number of times the cards are lifted.<br>
-    There is a cross X mark option to close the Message box.<br>
-    Ok button brings the user to go to game page, and allow the user to play the next game. Test proofs that it wirks as per design.
+  When the last pair of cards are choosen correctly, the popup message will appear to congrajulate the user with the number of times the cards are lifted.<br>  
+  There is a cross X mark option to close the Message box.<br>
+ Ok button brings the user to go to game page, and allow the user to play the next game. Test proofs that it wirks as per design.
+
   - [Popup-TestCase-1](docs/image/popup-testcase.PNG)
   
 
@@ -204,10 +205,10 @@ Congratulations! No Error Found.
   ## Deployment
   First we need to go to github website the create a new repositary using code Institute Template. Followed by giving a new name of the website.Then need to click the create repositary button. After click the button it will bring us to go to another page, which contains the green button labelled as Gitpod.Click the Gitpod button will bring us to the Gitpod Workspace for coding screen.
   ### Gitpod
-    Used Gitpod Workspace for coding. To preview the browser window need to type "python3 -m http.server" in the terminal window at the bottom.Afterthat, have to do git add for add files or remove files and do git commit for reasoning and do the git push for git hub repositary website.
+   Used Gitpod Workspace for coding. To preview the browser window need to type "python3 -m http.server" in the terminal window at the bottom.Afterthat, have to do git add for add files or remove files and do git commit for reasoning and do the git push for git hub repositary website.
 
   ### Github
-    Below the steps for deployment of my Yoga Mindfulness project using github.
+  Below the steps for deployment of my Yoga Mindfulness project using github.
 
   - In Github Repositary, click on Settings tab.
   - Then click on "Pages" tab in the left hand side sidebar.
