@@ -162,7 +162,7 @@ Document checking completed. No errors or warnings to show.
 - W3 CSS Validation Service- To validate HTML document, i used validate by direct input, no errors shown in the W3 validation page.
 W3 CSS validation Result:
 Congratulations! No Error Found.
-- Jshint JavaScript Validation - To validate Java Script file. no errors or Warning are shown in JShint validation Page. But jshint identified a unused variable in the js code. But this variable is used in game.html page, and used for Restart onClick button.
+- Jshint JavaScript Validation - To validate Java Script file. no errors or Warning are shown in both index.js and script.js file in JShint validation Page. But jshint identified a unused variable in the script.js file. But this variable is used in game.html page, and used for Restart onClick button.
 
 
   ### Supported Screen and Browsers
