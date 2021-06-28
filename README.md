@@ -189,7 +189,7 @@ Congratulations! No Error Found.
   - [Game-TestCase-2](docs/image/game-testcase-restart.PNG)
 
   ### Popup Message - Acutal Test Case
-    When the last pair of cards are choosen correctly, the popup message will appear to congrajulate the user with the number of times the cards are lifted.<br> 
+    When the last pair of cards are choosen correctly, the popup message will appear to congrajulate the user with the number of times the cards are lifted.<br>
     There is a cross X mark option to close the Message box.<br>
     Ok button brings the user to go to game page, and allow the user to play the next game. Test proofs that it wirks as per design.
   - [Popup-TestCase-1](docs/image/popup-testcase.PNG)
