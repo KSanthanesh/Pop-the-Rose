@@ -64,7 +64,6 @@ function checkMatch() {
   } else {
     unflipRoseCards();
   }
-
 }
 
 // matched cards

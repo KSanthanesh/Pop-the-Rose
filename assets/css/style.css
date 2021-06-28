@@ -67,16 +67,16 @@ nav {
 
 /* style the image and instruction to play */
 
-.box { 
-   margin: 60px auto;
-   width: 80%;
-} 
+.box {
+    margin: 60px auto;
+    width: 80%;
+}
 
 .image img {
-   float: left;
-   width: 400px;
-   height: 360px;
-   padding: 0 10px 0 0;
+    float: left;
+    width: 400px;
+    height: 360px;
+    padding: 0 10px 0 0;
 }
 
 .instruction>p {
@@ -426,7 +426,7 @@ footer {
     }
 
     .image {
-       margin: 15px auto;
+        margin: 15px auto;
         width: 70%;
     }
 
@@ -485,8 +485,9 @@ footer {
         padding: 7px;
         margin-top: 0;
     }
+
     .game-footer {
-        margin-top:30px;
+        margin-top: 30px;
     }
 
     .win-msg .winMsgSect {
@@ -564,10 +565,6 @@ footer {
         margin: 0 5px;
     }
 
-    footer {
-        margin-top: 50px;
-    }
-
     .social-networks i {
         font-size: 120%;
         padding: 25px;
@@ -595,11 +592,12 @@ footer {
     .win-msg {
         left: 14%;
     }
+
     .game-footer {
         margin-bottom: auto;
     }
 }
-   
+
 /* For  medium screens sizes from 400px wide and down */
 
 @media screen and (max-width: 400px) {
@@ -614,4 +612,3 @@ footer {
     }
 
 }
-
