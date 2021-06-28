@@ -13,6 +13,9 @@ body {
     background-color: #fcc685;
     height: fit-content;
 }
+.second-page, .game-footer {
+    height: fit-content;
+}
 
 /* style the heading and logo */
 
