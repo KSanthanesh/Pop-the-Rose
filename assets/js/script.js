@@ -33,7 +33,6 @@ function openCard() {
 
     }, 1000);
     firstClick = false;
-
   }
 
   if (cardOpen === 6) {
@@ -137,18 +136,16 @@ function restart() {
     let start = confirm("Do you want to Restart the Game?");
     if (start === true) {
       window.location.reload();
-      clearInterval(timer);
-      return false;
-    }
-
+    }  
   });
+
   document.querySelector('.ok-btn').addEventListener('click', function () {
-    window.location.reload();
-    return false;
+    window.location.reload();  
   });
 
 }
-restart();
+ restart();
+
 
 
 

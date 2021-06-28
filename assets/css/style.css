@@ -13,9 +13,7 @@ body {
     background-color: #fcc685;
     height: fit-content;
 }
-.second-page, .game-footer {
-    height: fit-content;
-}
+
 
 /* style the heading and logo */
 
@@ -178,16 +176,18 @@ footer {
 
 #mins {
     border: 2px solid #000;
-    padding: 2px;
-    border-radius: 5px;
+    padding: 4px;
+    border-radius: 8px;
     font-size: 90%;
+    margin-left: 3px;
 }
 
 #secs {
     border: 2px solid #000;
-    padding: 2px;
-    border-radius: 5px;
+    padding: 4px;
+    border-radius: 8px;
     font-size: 90%;
+    margin-left: 3px;
 }
 
 .rose-game {
@@ -456,7 +456,7 @@ footer {
     .rose-game {
         width: 100%;
         height: 30em;
-        margin-left: 10px;
+        margin: 10px 20px;
     }
 
     .rose-card {
@@ -486,6 +486,10 @@ footer {
         font-size: 130%;
         padding: 7px;
         margin-top: 0;
+    }
+    .game-footer {
+        margin-top:10px;
+        margin-bottom: 0;
     }
 
     .win-msg .winMsgSect {
@@ -594,11 +598,8 @@ footer {
     .win-msg {
         left: 14%;
     }
-
-    .restart-btn {
-        margin-bottom: 0;
-    }
 }
+   
 /* For  medium screens sizes from 400px wide and down */
 
 @media screen and (max-width: 400px) {

@@ -166,7 +166,7 @@ Congratulations! No Error Found.
 
   ### Supported Screen and Browsers
   I have used the most common browser to test my website,<br>
-   1. Mozilla Firefox
+   1. Mozilla Firefox 
    2. Google Chrome
    3. Microsoft Edge All the pages Responsive and displaying the website in order.
 
