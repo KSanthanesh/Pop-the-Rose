@@ -31,7 +31,7 @@
    This project is designed to test the brain memory. This game is useful for kids and adults to test their memory power.<br>
    I have used colourful Rose Pictures to create the pleasant feeling while playing this memory game.<br>
    The Webpage is categorised into two main sections, such as Home and Game.<br>
-   Timer and Congratulation Message will pop up end of each game with total number of flipped cards lifted. These functions are encourage the players to grade their memory power each time they play this memory game.
+   Timer will start when the user start to play and Congratulation Message will pop up end of each game with total number of flipped cards lifted. These functions are encourage the players to grade their memory power each time they play this memory game.
 
    ### Home
    The Home page covers the following section:
@@ -50,7 +50,7 @@
   - Play the game with flipped rose image
   - Timer
   - Start Again Button, with confirmation of Restart the game alert message.
-  - Once find all the roses the pop up message with Congratulations message and Total Moves.
+  - Once find all the roses the pop up message with Congratulations message and Total Moves. Ok Button also their to start the game again (or) they can close the popup window using X mark.
   - Footer 
 
   - [Game Page-Mobile-1](docs/image/game-mobile-1.PNG)
@@ -91,11 +91,11 @@ Header and Footer are commenly used in all pages.
   Home page contains pictures of Roses used in the game,Instruction of the game and Benefits of playing the memory game.
 
   #### Game page
-  The Next page is called Game Page, where the game is actually played. In the Game page, Restart button option is available to replay the game. After clicking the restart button, the popup message will appears. Giving an option for the player to either continue the game or restart the game.
+  The Next page is called Game Page, where the game is actually played. In the Game page, Restart button option is available to replay the game. After clicking the restart button, the popup message will appears. Giving an option for the player to either continue the game or Restart the game.
   ### Pop-up Message
-  The last part of the game is pop-up message. The game completes with Congratulation popup message. it also provides number of flip cards lifted while playing the game.
+  The last part of the game is pop-up message. The game completes with Congratulation popup message. it also provides number of flip cards lifted while playing the game. Ok Button also their to start the game again (or) they can close the popup window using X mark.
   ### Future Features
-  - Integrate more games into this website, provideing more option to the player.
+  - Integrate more games into this website, providing more option to the player.
   - Adding music into each type of game.
 
 
@@ -153,7 +153,7 @@ Header and Footer are commenly used in all pages.
    -  Font Awesome - icons used throughout the site.
     Responsive design - To generate the mockup image.
    - Python Tutor - to check how the Java Script code behaves in each line.
-   - 
+   - Dev tools -For inspecting and editing the web code.
 ## Testing
   ### Code Validation
  - W3 Markup Validation Service- To validate HTML document, i used Validate by direct input, some errors shown, and then i fixed the errors.
@@ -212,7 +212,15 @@ Congratulations! No Error Found.
   - In Github Repositary, click on Settings tab.
   - Then click on "Pages" tab in the left hand side sidebar.
    - Then under "Source" click the "None" dropdown and select the "Master" branch.
-  - Followed by clicking "Save".
+  - Followed by clicking "Save".<br>
+  <b>Links added in to the html Page:</b>
+  Html: <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  Html: <link rel="stylesheet" href="assets/css/style.css"><br>
+  <b>For JavaScript:</b>
+  Html: <script src="https://kit.fontawesome.com/afee0b405c.js" crossorigin="anonymous"></script>
+  index.Html: <script src="assets/js/index.js"></script>
+  game.Html : <script src="assets/js/script.js"></script>
+
 
 The above steps have created the website URL https://ksanthanesh.github.io/Pop-the-Rose/.
 
@@ -221,7 +229,7 @@ The above steps have created the website URL https://ksanthanesh.github.io/Pop-t
 - I would like to thank the staff and students of Code Institute for their help.
 - I also like to thank Slack Community for sharing the open discussion from various students.
 - The images on this site have been taken from Google Search and pexels, and used only for education purpose to complete this project.
-- https://www.favicon.cc/ -Favicon icon created using this website.
+- https://www.favicon-generator.org/ -Favicon icon created using this website.
 - Benefits point are taken from this Website https://www.curiousworld.com/blog/importance-playing-memory-games#:~:text=Playing%20memory%20games%20can%20improve%20other%20brain%20functions%2C,to%20detail.%20Memory%20games%20can%20improve%20visual%20recognition.
 - Reference taken from those videos
 https://www.youtube.com/watch?v=Y4lOwOOK7yE
