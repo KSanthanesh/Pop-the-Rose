@@ -60,11 +60,11 @@ function checkMatch() {
   totalCardFlip = ++totalCardFlip;
   let cardMatch = cardOptionOne.dataset.name === cardOptionTwo.dataset.name;
   if (cardMatch) {
-    disableRoseCards(); 
+    disableRoseCards();
   } else {
-    unflipRoseCards(); 
+    unflipRoseCards();
   }
-  
+
 }
 
 // matched cards
@@ -75,7 +75,7 @@ function disableRoseCards() {
   cardOpen = ++cardOpen;
 
   resetBoard();
-  
+
 
   // once finish the game congrats msg, time and total flip card will shown
   // winning msg will pop up
@@ -122,7 +122,7 @@ function resetBoard() {
   document.querySelectorAll('.rose-card').forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
-    
+
   });
 })();
 
@@ -131,20 +131,21 @@ document.querySelectorAll('.rose-card').forEach(card => card.addEventListener('c
 /** when restart button choosen the popup message will appear, allowing to confirm to continue the game
  * There is ok button in the winning msg box to Restart the game
  */
+
 function restart() {
   document.querySelector('.restart-btn').addEventListener('click', function () {
     let start = confirm("Do you want to Restart the Game?");
     if (start === true) {
       window.location.reload();
-    }  
+    }
   });
 
   document.querySelector('.ok-btn').addEventListener('click', function () {
-    window.location.reload();  
+    window.location.reload();
   });
-
 }
- restart();
+
+
 
 
 

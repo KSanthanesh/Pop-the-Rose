@@ -11,7 +11,6 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     background-color: #fcc685;
-    height: fit-content;
 }
 
 
@@ -137,7 +136,6 @@ h2 {
 
 footer {
     margin-top: 60px;
-    height: fit-content;
 }
 
 .social-networks {
@@ -402,7 +400,7 @@ footer {
 @media screen and (max-width: 700px) {
     .second-page {
         width: 103%;
-        height: 960px;
+        height: 860px;
     }
 
     .header {
@@ -454,14 +452,14 @@ footer {
     }
 
     .rose-game {
-        width: 100%;
+        width: 98%;
         height: 30em;
-        margin: 10px 20px;
+        margin: 10px;
     }
 
     .rose-card {
-        width: calc(29% - 10px);
-        height: calc(20% - 10px);
+        width: calc(32% - 10px);
+        height: calc(20% - 1px);
     }
 
     .front-img,
@@ -488,8 +486,7 @@ footer {
         margin-top: 0;
     }
     .game-footer {
-        margin-top:10px;
-        margin-bottom: 0;
+        margin-top:30px;
     }
 
     .win-msg .winMsgSect {
@@ -597,6 +594,9 @@ footer {
 
     .win-msg {
         left: 14%;
+    }
+    .game-footer {
+        margin-bottom: auto;
     }
 }
    
